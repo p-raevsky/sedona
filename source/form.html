@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html class="page-form" lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body class="page-form__body">
+  <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo" href="/source/index.html">
         <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип «Седона»"><!--Размеры 150/150 временно-->
@@ -16,133 +16,133 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="/source/index.html">Главная</a>
+              <a class="main-nav__link title-general" href="/source/index.html">Главная</a>
             </li>
 
             <li class="main-nav__item">
-              <a href="#">Фото и видео</a>
+              <a class="main-nav__link title-general" href="#">Фото и видео</a>
             </li>
 
             <li class="main-nav__item">
-              <a>Форма отзыва</a>
+              <a class="main-nav__link title-general">Форма отзыва</a>
             </li>
 
             <li class="main-nav__item">
-              <a href="#">Html academy</a>
+              <a class="main-nav__link title-general" href="#">Html academy</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <main class="page-form-main">
-      <section class="page-form-main__heading">
-        <img class="page-form-main__title-image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Заголовок «Седона»"><!--Размеры 150/150 временно-->
-        <h1 class="page-form-main__title title-general"></h1>
-        <p class="page-form-main__intro text-general">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    <main class="page-main">
+      <section class="page-main__heading">
+        <img class="heading__logo heading__logo--short" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Заголовок «Седона»"><!--Размеры 150/150 временно-->
+        <h1 class="heading__title title-general">Оставьте свой отзыв</h1>
+        <p class="heading__intro text-general">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
 
-      <form class="form__list" method="post" action="https://echo.htmlacademy.ru">
-        <fieldset class="form__user">
+      <form class="form" method="post" action="https://echo.htmlacademy.ru">
+        <fieldset class="form__block form__block--user">
           <legend class="form__title form__title--left title-general">Представьтесь:</legend>
-          <ul class="form__user-list">
-            <li class="form__user-item">
-              <label class="form__user-data">
-                <span class="form__user-input text-general">Имя*:</span>
-                <input class="form__user-field text-small" type="text" name="user-first-name" placeholder="Петр" required>
+          <ul class="form__data-list list">
+            <li class="form__data-item">
+              <label class="data-item__term">
+                <span class="data-item__text text-general">Имя*:</span>
+                <input class="data-item__field text-small" type="text" name="user-first-name" placeholder="Петр" required>
               </label>
             </li>
-            <li class="form__user-item">
-              <label class="form__user-data">
-                <span class="form__user-input text-general">Фамилия*:</span>
-                <input class="form__user-field text-small" type="text" name="user-second-name" placeholder="Иванов" required>
+            <li class="form__data-item">
+              <label class="data-item__term">
+                <span class="data-item__text text-general">Фамилия*:</span>
+                <input class="data-item__field text-small" type="text" name="user-second-name" placeholder="Иванов" required>
               </label>
             </li>
-            <li class="form__user-item">
-              <label class="form__user-data">
-                <span class="form__user-input text-general">Отчество*:</span>
-                <input class="form__user-field text-small" type="text" name="user-patronymic" placeholder="Александрович">
+            <li class="form__data-item">
+              <label class="data-item__term">
+                <span class="data-item__text text-general">Отчество*:</span>
+                <input class="data-item__field text-small" type="text" name="user-patronymic" placeholder="Александрович">
               </label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="form__contacts">
+        <fieldset class="form__block form__block--contacts">
           <legend class="form__title form__title--with-line title-general">Контактная информация:</legend>
-          <ul class="form__contacts-list">
-            <li class="form__contacts-item">
-              <label class="form__contacts-data">
-                <span class="form__contacts-input text-general">Контактный телефон*:</span>
-                <input class="form__contacts-field form__contacts-field--width text-small" type="tel" name="user-tel" placeholder="Введите телефон" required>
+          <ul class="form__data-list form__data-list--contacts list">
+            <li class="form__data-item form__data-item--contacts">
+              <label class="data-item__term">
+                <span class="data-item__text data-item__text--contacts text-general">Контактный телефон*:</span>
+                <input class="data-item__field data-item__field--width text-small" type="tel" name="user-tel" placeholder="Введите телефон" required>
               </label>
             </li>
-            <li class="form__contacts-item">
-              <label class="form__contacts-data">
-                <span class="form__contacts-input text-general">Электронная почта*:</span>
-                <input class="form__contacts-field form__contacts-field--width text-small" type="email" name="user-email" placeholder="Введите e-mail" required>
+            <li class="form__data-item form__data-item--contacts">
+              <label class="data-item__term">
+                <span class="data-item__text data-item__text--contacts text-general">Электронная почта*:</span>
+                <input class="data-item__field data-item__field--width text-small" type="email" name="user-email" placeholder="Введите e-mail" required>
               </label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="form__feeling">
+        <fieldset class="form__block form__block--feeling">
           <legend class="form__title title-general">Ваше общее впечатление:</legend>
-          <ul class="form__feeling-list">
-            <li class="form__feeling-item">
-              <label class="form__feeling-name">
-                <input class="form__feeling-radio visually-hidden" tabindex="0" type="radio" name="feeling-radio" value="Скорее положительное" checked>
-                <span class="form__radio-input text-small">Скорее положительное</span>
+          <ul class="form__choice-list list">
+            <li class="form__choice-item">
+              <label class="choice-item__term">
+                <input class="choice-item__input visually-hidden" tabindex="0" type="radio" name="feeling-radio" value="Скорее положительное" checked>
+                <span class="choice-item__text text-small">Скорее положительное</span>
               </label>
             </li>
-            <li class="form__feeling-item">
-              <label class="form__feeling-name">
-                <input class="form__feeling-radio visually-hidden" tabindex="0" type="radio" name="feeling-radio" value="Скорее отрицательное">
-                <span class="form__radio-input text-small">Скорее отрицательное</span>
+            <li class="form__choice-item">
+              <label class="choice-item__term">
+                <input class="choice-item__input visually-hidden" tabindex="0" type="radio" name="feeling-radio" value="Скорее отрицательное">
+                <span class="choice-item__text text-small">Скорее отрицательное</span>
               </label>
             </li>
-            <li class="form__feeling-item">
-              <label class="form__feeling-name">
-                <input class="form__feeling-radio visually-hidden" tabindex="0" type="radio" name="feeling-radio" value="Затрудняюсь ответить">
-                <span class="form__radio-input text-small">Затрудняюсь ответить</span>
+            <li class="form__choice-item">
+              <label class="choice-item__term">
+                <input class="choice-item__input visually-hidden" tabindex="0" type="radio" name="feeling-radio" value="Затрудняюсь ответить">
+                <span class="choice-item__text text-small">Затрудняюсь ответить</span>
               </label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="form__attractions">
+        <fieldset class="form__block form__block--attractions">
           <legend class="form__title form__title--with-line title-general">Посещенные достопримечательности:</legend>
-          <ul class="form__attractions-list">
-            <li class="form__attractions-item">
-              <label class="form__attractions-name">
-                <input class="form__attractions-checkbox visually-hidden" tabindex="0" type="checkbox" name="attractions-checkbox" value="Мост дьявола" checked>
-                <span class="form__checkbox-input text-small">Мост дьявола</span>
+          <ul class="form__choice-list form__choice-list--attractions list">
+            <li class="form__choice-item form__choice-item--attractions">
+              <label class="choice-item__term">
+                <input class="choice-item__input choice-item__input--attractions visually-hidden" tabindex="0" type="checkbox" name="attractions-checkbox" value="Мост дьявола" checked>
+                <span class="choice-item__text choice-item__text--attractions text-small">Мост дьявола</span>
               </label>
             </li>
-            <li class="form__attractions-item">
-              <label class="form__attractions-name">
-                <input class="form__attractions-checkbox visually-hidden" tabindex="0" type="checkbox" name="attractions-checkbox" value="Гора-Колокол" checked>
-                <span class="form__checkbox-input text-small">Гора-Колокол</span>
+            <li class="form__choice-item form__choice-item--attractions">
+              <label class="choice-item__term">
+                <input class="choice-item__input choice-item__input--attractions visually-hidden" tabindex="0" type="checkbox" name="attractions-checkbox" value="Гора-Колокол" checked>
+                <span class="choice-item__text choice-item__text--attractions text-small">Гора-Колокол</span>
               </label>
             </li>
-            <li class="form__attractions-item">
-              <label class="form__attractions-name">
-                <input class="form__attractions-checkbox visually-hidden" tabindex="0" type="checkbox" name="attractions-checkbox" value="Слайд-парк" checked>
-                <span class="form__checkbox-input text-small">Слайд-парк</span>
+            <li class="form__choice-item form__choice-item--attractions">
+              <label class="choice-item__term">
+                <input class="choice-item__input choice-item__input--attractions visually-hidden" tabindex="0" type="checkbox" name="attractions-checkbox" value="Слайд-парк" checked>
+                <span class="choice-item__text choice-item__text--attractions text-small">Слайд-парк</span>
               </label>
             </li>
-            <li class="form__attractions-item">
-              <label class="form__attractions-name">
-                <input class="form__attractions-checkbox visually-hidden" tabindex="0" type="checkbox" name="attractions-checkbox" value="Красные скалы">
-                <span class="form__checkbox-input text-small">Красные скалы</span>
+            <li class="form__choice-item form__choice-item--attractions">
+              <label class="choice-item__term">
+                <input class="choice-item__input choice-item__input--attractions visually-hidden" tabindex="0" type="checkbox" name="attractions-checkbox" value="Красные скалы">
+                <span class="choice-item__text choice-item__text--attractions text-small">Красные скалы</span>
               </label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="form__write-us">
+        <fieldset class="form__block form__block--write-us">
           <legend class="form__title form__title--with-line title-general">Опишите свои эмоции</legend>
           <label class="form__letter">
-            <textarea class="form__letter-field text-small" name="letter" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="letter__field text-small" name="letter" placeholder="Опишите подробно все свои восторги"></textarea>
           </label>
         </fieldset>
 
@@ -155,26 +155,26 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <p class="page-footer__title title-general">#visitsedona</p>
+        <p class="page-footer__text title-general">#visitsedona</p>
 
-        <div class="page-footer__wrapper-social">
-          <ul class="page-footer__list">
-            <li class="page-footer__item">
-              <a class="page-footer__link page-footer__link--twitter" href="#"><span class="visually-hidden">Твитер</span></a>
+        <div class="social__wrapper">
+          <ul class="social__list list">
+            <li class="social__item social-item">
+              <a class="social-item__link social-item__link--tw" href="#"><span class="visually-hidden">Твитер</span></a>
             </li>
-            <li class="page-footer__item">
-              <a class="page-footer__link page-footer__link--facebook" href="#"><span class="visually-hidden">Фейсбук</span></a>
+            <li class="social-item">
+              <a class="social-item__link social-item__link--fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
             </li>
-            <li class="page-footer__item">
-              <a class="page-footer__link page-footer__link--youtube" href="#"><span class="visually-hidden">Ютуб</span></a>
+            <li class="social-item">
+              <a class="social-item__link social-item__link--yt" href="#"><span class="visually-hidden">Ютуб</span></a>
             </li>
           </ul>
         </div>
 
-        <div class="page-footer__wrapper-copyright">
-          <p class="page-footer__copyright">Разработано</p>
-          <a href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип HTML Academy, ссылка ведёт на лендинг интенсива «Профессиональный HTML и CSS, уровень 2">
+        <div class="copyright__wrapper">
+          <p class="copyright__text text-general">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип HTML Academy, ссылка ведёт на лендинг интенсива «Профессиональный HTML и CSS, уровень 2">
           </a>
         </div>
       </div>
