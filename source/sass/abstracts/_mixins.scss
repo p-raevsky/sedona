@@ -1,0 +1,26 @@
+@mixin text-general($font-size, $line-height: $font-size) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-family: $font;
+  text-transform: uppercase;
+}
+
+@mixin title-general($font-size, $line-height) {
+  font-weight: 700;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-family: $font;
+  text-transform: uppercase;
+}
+
+@mixin  list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin margin($margin-top, $margin-bottom: $margin-top) {
+  margin-top: $margin-top;
+  margin-bottom: $margin-bottom;
+}

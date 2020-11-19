@@ -1,1 +1,18 @@
-// Начните писать стили здесь
+@import "./abstracts/normalize.scss";
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+@import "./base/font";
+
+@import "./blocks/page.scss";
+@import "./blocks/page-body.scss";
+@import "./blocks/page-header";
+@import "./blocks/button";
+@import "./blocks/page-main";
+@import "./blocks/heading";
+@import "./blocks/advantages";
+@import "./blocks/visually-hidden";
+@import "./blocks/search";
+@import "./blocks/page-footer";
+@import "./blocks/social";
+@import "./blocks/copyright";

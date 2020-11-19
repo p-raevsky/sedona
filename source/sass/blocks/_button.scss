@@ -1,0 +1,12 @@
+.button {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 17px;
+
+  color: $font-white;
+  text-decoration: none;
+
+  background-color: $btn-blue;
+
+  @include title-general($font-size-big, $line-height-big);
+}

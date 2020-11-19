@@ -1,0 +1,25 @@
+.main-nav {
+  &__wrapper-button {
+    background-color: $bg-white;
+  }
+
+  &__list {
+    @include list;
+  }
+
+  &__item {
+    text-align: center;
+
+    background-color: $bg-blue;
+  }
+
+  &__link {
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+    color: $font-white;
+    text-decoration: none;
+
+    @include title-general($font-size-medium, $line-height-large);
+  }
+}

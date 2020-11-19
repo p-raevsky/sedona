@@ -1,0 +1,14 @@
+
+.copyright {
+  display: flex;
+  align-items: center;
+
+  &__text {
+    display: inline-block;
+    margin-right: 13px;
+
+    color: $font-black;
+
+    @include text-general($font-size-small, $line-height-big);
+  }
+}

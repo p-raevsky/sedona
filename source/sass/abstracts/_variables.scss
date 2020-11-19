@@ -1,0 +1,76 @@
+// Font
+
+$font: (
+  "PT Sans",
+  "Arial",
+  sans-serif,
+);
+$font-size-small: 14px;
+$font-size-medium: 18px;
+$font-size-big: 21px;
+$font-size-large: 30px;
+$line-height-small: 21px;
+$line-height-medium: 24px;
+$line-height-big: 26px;
+$line-height-large: 40px;
+
+// Display size
+
+// Background colors
+
+$bg-white: #ffffff;
+$bg-white-20: rgba(#ffffff, 0.2);
+$bg-blue: #81b3d2;
+$bg-blue-darken: #669ec0;
+$bg-blue-darkest: #5496bd;
+$bg-gray: #eeeeee;
+$bg-gray-darken: #e6e6e6;
+$bg-gray-darkest: #e5e5e5;
+$bg-gray-light: #eaeaea;
+$bg-gray-lighten: #f2f2f2;
+$bg-black-30: rgba(#000000, 0.3);
+$bg-black-60: rgba(#000000, 0.6);
+$bg-backdrop: #c48d6c;
+
+// Font colors
+
+$font-white: #ffffff;
+$font-black: #000000;
+$font-black-lighten: #333333;
+$font-menu-hover: #81b3d2;
+$font-menu-down: rgba(#000000, 0.3);
+$font-menu-active: #766357;
+$font-menu-active-hover: #604e43;
+$font-menu-active-down: rgba(#766357, 0.3);
+$font-btn-down: rgba(#ffffff, 0.3);
+
+// Button colors
+
+$btn-blue: #81b3d2;
+$btn-hover: #669ec0;
+$btn-down: #5496bd;
+$btn-diabled: #e5e5e5;
+$btn-choice-gray: #f2f2f2;
+$btn-choice-hover: #e5e5e5;
+$btn-choice-down: #d5d5d5;
+$btn-check: #333333;
+$btn-check-down: rgba(#333333, 0.3);
+
+// Border colors
+
+$border-gray: #e5e5e5;
+$border-gray-darken: #dbdbdb;
+$border-gray-darkest: #d6d6d6;
+
+// Icon colors
+
+$icon-black: #000000;
+$icon-black-lighten: #333333;
+$icon-black-hover: #333333;
+$icon-black-down: rgba(#333333, 0.3);
+$icon-video-gray: #5c6870;
+$icon-blue: #81b3d2;
+$icon-menu-hover: rgba(#81b3d2, 0.6);
+$icon-menu-down: rgba(#81b3d2, 0.3);
+$icon-hover: rgba(#ffffff, 0.6);
+$icon-down: rgba(#ffffff, 0.3);

@@ -1,0 +1,11 @@
+.page-footer__wrapper {
+  padding-top: 39px;
+  padding-bottom: 26px;
+
+  text-align: center;
+
+  .page-footer__text {
+    @include title-general($font-size-big, $line-height-big);
+    @include margin(0, 34px);
+  }
+}
