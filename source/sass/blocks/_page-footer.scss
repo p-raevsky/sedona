@@ -1,10 +1,14 @@
-.page-footer__wrapper {
-  padding-top: 39px;
-  padding-bottom: 26px;
+.page-footer {
+  &__wrapper {
+    padding-top: 39px;
+    padding-bottom: 26px;
 
-  text-align: center;
+    text-align: center;
+  }
 
-  .page-footer__text {
+  &__text {
+    color: $font-black;
+
     @include title-general($font-size-big, $line-height-big);
     @include margin(0, 34px);
   }

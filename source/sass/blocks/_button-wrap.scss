@@ -1,0 +1,15 @@
+.button-wrap {
+  &__button {
+    width: 250px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    border: 0;
+  }
+
+  &__required-field {
+    color: $font-black-lighten;
+
+    @include text-general($font-size-small, $line-height-big);
+  }
+}

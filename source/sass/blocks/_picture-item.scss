@@ -1,0 +1,35 @@
+.picture-item {
+  margin: 0;
+
+  text-align: left;
+
+  border-top: 1px solid $border-gray;
+
+  @include padding(22px, 15px);
+
+  &__like-count,
+  &__desc {
+    color: $font-black;
+
+    @include title-general($font-size-small, $line-height-medium);
+    @include text-small;
+  }
+
+  &__desc {
+    @include margin(10px, 0);
+  }
+
+  &__autor {
+    color: $font-black-lighten;
+
+    @include text-general($font-size-small, $line-height-medium);
+    @include text-small;
+    @include margin(10px, 0);
+  }
+
+  &__like-count {
+    padding-left: 37px;
+
+    @include margin(13px, 0);
+  }
+}

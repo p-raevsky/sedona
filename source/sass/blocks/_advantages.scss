@@ -18,21 +18,27 @@
 
     .advantages__item {
       .advantages__title {
+        color: $font-black;
+
         @include title-general($font-size-medium, $line-height-big);
       }
 
       .advantages__text {
+        color: $font-black-lighten;
+
         @include text-general($font-size-small, $line-height-small);
       }
 
       &--blue {
-        color: $font-white;
-
         background-color: $bg-blue;
-        h3 {
+        .advantages__title {
+          color: $font-white;
+
           @include margin(0, 20px);
         }
-        p {
+        .advantages__text {
+          color: $font-white;
+
           @include margin(18px, 0);
         }
       }

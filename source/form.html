@@ -37,15 +37,20 @@
     </header>
 
     <main class="page-main">
-      <section class="heading">
-        <img class="heading__logo heading__logo--short" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Заголовок «Седона»"><!--Размеры 150/150 временно-->
-        <h1 class="heading__title title-general">Оставьте свой отзыв</h1>
-        <p class="heading__intro text-general">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <section class="heading heading--form">
+        <div class="heading__wrapper-img">
+          <img class="heading__logo heading__logo--short" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Заголовок «Седона»"><!--Размеры 150/150 временно-->
+        </div>
+
+        <div class="heading__wrapper-title">
+          <h1 class="heading__title heading__title--form title-general">Оставьте свой отзыв</h1>
+          <p class="heading__intro text-general">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
       </section>
 
       <form class="form" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="form-block form-block--user">
-          <legend class="form-block__title form-block__title--left title-general">Представьтесь:</legend>
+          <p class="form-block__title form-block__title--left title-general">Представьтесь:</p>
           <ul class="form-block__list form-block__list--user list">
             <li class="form-block__item form-block__item--user">
               <label class="form-block__term data-item">
@@ -69,7 +74,7 @@
         </fieldset>
 
         <fieldset class="form-block form-block--contacts">
-          <legend class="form-block__title form-block__title--with-line title-general">Контактная информация:</legend>
+          <p class="form-block__title form-block__title--with-line title-general">Контактная информация:</p>
           <ul class="form-block__list form-block__list--contacts list">
             <li class="form-block__item form-block__item--contacts">
               <label class="form-block__term data-item">
@@ -87,7 +92,7 @@
         </fieldset>
 
         <fieldset class="form-block form-block--feeling">
-          <legend class="form-block__title title-general">Ваше общее впечатление:</legend>
+          <p class="form-block__title title-general">Ваше общее впечатление:</p>
           <ul class="form-block__list form-block__list--feeling list">
             <li class="form-block__item form-block__item--feeling">
               <label class="form-block__term choice-item">
@@ -111,7 +116,7 @@
         </fieldset>
 
         <fieldset class="form-block form-block--attractions">
-          <legend class="form-block__title form-block__title--with-line title-general">Посещенные достопримечательности:</legend>
+          <p class="form-block__title form-block__title--with-line title-general">Посещенные достопримечательности:</p>
           <ul class="form-block__list form-block__list--attractions list">
             <li class="form-block__item form-block__item--attractions">
               <label class="form-block__term choice-item">
@@ -141,7 +146,7 @@
         </fieldset>
 
         <fieldset class="form-block form-block--write-us">
-          <legend class="form-block__title form-block__title--with-line title-general">Опишите свои эмоции</legend>
+          <p class="form-block__title form-block__title--with-line title-general">Опишите свои эмоции</p>
           <label class="form-block__letter">
             <textarea class="form-block__field text-small" name="letter" placeholder="Опишите подробно все свои восторги"></textarea>
           </label>

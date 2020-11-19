@@ -1,18 +1,22 @@
 .search {
   $bl: ".search";
 
-  #{$bl}__wrapper {
+  &__wrapper {
     padding-top: 33px;
     padding-bottom: 49px;
 
     text-align: center;
 
     #{$bl}__title {
+      color: $font-black;
+
       @include title-general($font-size-big, $line-height-big);
       @include margin(0, 30px);
     }
 
     #{$bl}__text {
+      color: $font-black-lighten;
+
       @include text-general($font-size-small, $line-height-medium);
       @include margin(0, 27px);
     }
@@ -24,7 +28,7 @@
     }
   }
 
-  #{$bl}__wrapper-img {
+  &__wrapper-img {
     display: relative;
 
     #{$bl}__map-iframe {
