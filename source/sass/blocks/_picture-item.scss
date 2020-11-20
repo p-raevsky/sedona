@@ -1,35 +1,36 @@
 .picture-item {
   margin: 0;
+  padding-top: 22px;
+  padding-bottom: 15px;
 
   text-align: left;
 
-  border-top: 1px solid $border-gray;
+  border-top: 1px solid $gray-400;
 
-  @include padding(22px, 15px);
+  .picture-item__like-count,
+  .picture-item__desc {
+    color: $black;
 
-  &__like-count,
-  &__desc {
-    color: $font-black;
-
-    @include title-general($font-size-small, $line-height-medium);
-    @include text-small;
+    @include fonts($font-size-small, $line-height-medium, 700, none);
   }
 
-  &__desc {
-    @include margin(10px, 0);
+  .picture-item__desc {
+    margin-top: 10px;
+    margin-bottom: 0;
   }
 
-  &__autor {
-    color: $font-black-lighten;
+  .picture-item__autor {
+    margin-top: 10px;
+    margin-bottom: 0;
 
-    @include text-general($font-size-small, $line-height-medium);
-    @include text-small;
-    @include margin(10px, 0);
+    color: $black-lighten;
+
+    @include fonts($font-size-small, $line-height-medium, 400, none);
   }
 
-  &__like-count {
+  .picture-item__like-count {
+    margin-top: 13px;
+    margin-bottom: 0;
     padding-left: 37px;
-
-    @include margin(13px, 0);
   }
 }

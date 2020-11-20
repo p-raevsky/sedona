@@ -1,81 +1,89 @@
 .advantages {
-  .advantages__list {
-    text-align: center;
+  text-align: center;
 
-    .advantages__wrapper-img {
-      background-color: $bg-backdrop;
+  .advantages__title {
+    color: $black;
+
+    @include fonts($font-size-medium, $line-height-big, 700);
+  }
+
+  .advantages__text {
+    color: $black-lighten;
+
+    @include fonts($font-size-small, $line-height-small);
+  }
+
+  .advantages__wrapper-img {
+    background-color: $brown;
+  }
+
+  .advantages__wrapper-white {
+    padding: 35px 0;
+
+    h3 {
+      margin-top: 26px;
+      margin-bottom: 0;
     }
 
-    .advantages__wrapper-white {
-      padding: 35px 0;
-      h3 {
-        @include margin(26px, 0);
-      }
-      p {
-        @include margin(18px, 0);
-      }
+    p {
+      margin-top: 18px;
+      margin-bottom: 0;
+    }
+  }
+
+  &--blue {
+    background-color: $blue;
+
+    .advantages__title {
+      margin-top: 0;
+      margin-bottom: 20px;
+
+      color: $white;
     }
 
-    .advantages__item {
-      .advantages__title {
-        color: $font-black;
+    .advantages__text {
+      margin-top: 18px;
+      margin-bottom: 0;
 
-        @include title-general($font-size-medium, $line-height-big);
-      }
-
-      .advantages__text {
-        color: $font-black-lighten;
-
-        @include text-general($font-size-small, $line-height-small);
-      }
-
-      &--blue {
-        background-color: $bg-blue;
-        .advantages__title {
-          color: $font-white;
-
-          @include margin(0, 20px);
-        }
-        .advantages__text {
-          color: $font-white;
-
-          @include margin(18px, 0);
-        }
-      }
-
-      &--blue-1 {
-        padding-top: 34px;
-        padding-bottom: 39px;
-      }
-
-      &--blue-2 {
-        padding-top: 39px;
-        padding-bottom: 35px;
-      }
-
-      &--white-1 {
-        h3 {
-          margin: 0;
-        }
-      }
-
-      &--gray {
-        padding-top: 25px;
-        padding-bottom: 24px;
-
-        background-color: $bg-gray;
-        h3 {
-          @include margin(0, 16px);
-        }
-        p {
-          @include margin(18px, 0);
-        }
-      }
-
-      &--border {
-        border-top: 1px solid $border-gray-darkest;
-        border-bottom: 1px solid $border-gray-darkest;
-      }
+      color: $white;
     }
+  }
+
+  &--blue-first {
+    padding-top: 34px;
+    padding-bottom: 39px;
+  }
+
+  &--blue-second {
+    padding-top: 39px;
+    padding-bottom: 35px;
+  }
+
+  &--white-first {
+    h3 {
+      margin: 0;
+    }
+  }
+
+  &--gray {
+    padding-top: 25px;
+    padding-bottom: 24px;
+
+    background-color: $gray;
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+
+    p {
+      margin-top: 18px;
+      margin-bottom: 0;
+    }
+  }
+
+  &--border {
+    border-top: 1px solid $gray-900;
+    border-bottom: 1px solid $gray-900;
   }
 }

@@ -1,17 +1,19 @@
-.social__list {
-  display: flex;
-  justify-content: space-between;
-  width: 151px;
+.social {
+  .social__list {
+    display: flex;
+    justify-content: space-between;
+    width: 151px;
 
-  @include list;
+    @include list;
 
-  .social-item__link {
-    display: block;
-    width: 46px;
-    height: 48px;
+    .social-item__link {
+      display: block;
+      width: 46px;
+      height: 48px;
 
-    text-decoration: none;
+      text-decoration: none;
 
-    background-color: $icon-blue;
+      background-color: $blue;
+    }
   }
 }

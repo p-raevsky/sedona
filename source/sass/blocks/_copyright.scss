@@ -7,8 +7,8 @@
     display: inline-block;
     margin-right: 13px;
 
-    color: $font-black;
+    color: $black;
 
-    @include text-general($font-size-small, $line-height-big);
+    @include fonts($font-size-small, $line-height-big);
   }
 }

@@ -1,25 +1,29 @@
 .video {
-  &__item {
+  .video__item {
     margin: 0;
+    padding-top: 32px;
+    padding-bottom: 38px;
 
     text-align: center;
 
-    border-top: 1px solid $border-gray;
-
-    @include padding(32px, 38px);
+    border-top: 1px solid $gray-400;
   }
 
-  &__title {
-    color: $font-black;
+  .video__title {
+    margin-top: 0;
+    margin-bottom: 35px;
 
-    @include title-general($font-size-medium, $line-height-big);
-    @include margin(0, 35px);
+    color: $black;
+
+    @include fonts($font-size-medium, $line-height-big, 700);
   }
 
-  &__desc {
-    color: $font-black-lighten;
+  .video__desc {
+    margin-top: 0;
+    margin-bottom: 33px;
 
-    @include text-general($font-size-small, $line-height-medium);
-    @include margin(0, 33px);
+    color: $black-lighten;
+
+    @include fonts($font-size-small, $line-height-medium);
   }
 }

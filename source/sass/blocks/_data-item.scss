@@ -1,16 +1,17 @@
 .data-item {
-  &__text {
-    color: $font-black-lighten;
+  .data-item__text {
+    color: $black-lighten;
 
-    @include text-general($font-size-small, $line-height-big);
+    @include fonts($font-size-small, $line-height-big);
   }
-  &__field {
-    color: $font-black;
 
-    @include title-general($font-size-medium, $line-height-big);
+  .data-item__field {
+    color: $black;
+
+    @include fonts($font-size-medium, $line-height-big, 700);
 
     &::placeholder {
-      color: $font-black;
+      color: $black;
       text-transform: none;
     }
   }

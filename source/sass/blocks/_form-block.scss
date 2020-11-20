@@ -2,61 +2,73 @@
   padding: 0;
 
   border: 0;
-  border-top: 1px solid $border-gray;
+  border-top: 1px solid $gray-400;
 
-  &__title {
+  .form-block__title {
     margin: 0;
+    padding-top: 20px;
+    padding-bottom: 0;
 
-    @include padding(20px, 0);
-    @include title-general($font-size-medium, $line-height-big);
+    @include fonts($font-size-medium, $line-height-big, 700);
   }
 
-  &__list {
+  .form-block__list {
     @include list;
   }
 
   &--user {
-    @include padding(0, 25px);
+    padding-top: 0;
+    padding-bottom: 25px;
+
     p {
       padding-bottom: 17px;
     }
   }
 
   &--contacts {
-    @include padding(0, 28px);
+    padding-top: 0;
+    padding-bottom: 28px;
+
     p {
       padding-bottom: 19px;
     }
   }
 
   &--feeling {
-    @include padding(0, 41px);
+    padding-top: 0;
+    padding-bottom: 41px;
+
     p {
       padding-bottom: 25px;
     }
   }
 
   &--attractions {
-    @include padding(0, 39px);
+    padding-top: 0;
+    padding-bottom: 39px;
+
     p {
-      @include padding(15px, 25px);
+      padding-top: 15px;
+      padding-bottom: 25px;
     }
   }
 
   &--write-us {
-    @include padding(0, 51px);
+    padding-top: 0;
+    padding-bottom: 51px;
+
     p {
       padding-bottom: 15px;
     }
   }
 
-  &__field {
-    color: $font-black;
+  .form-block__field {
+    color: $black;
 
-    @include title-general($font-size-medium, $line-height-big);
+    @include fonts($font-size-medium, $line-height-big, 700);
 
     &::placeholder {
-      color: $font-black;
+      color: $black;
       text-transform: none;
     }
   }
