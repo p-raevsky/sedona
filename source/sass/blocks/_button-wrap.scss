@@ -1,15 +1,13 @@
-.button-wrap {
-  .button-wrap__button {
-    width: 250px;
-    padding-right: 15px;
-    padding-left: 15px;
+.button-wrap__button {
+  width: 250px;
+  padding-right: 15px;
+  padding-left: 15px;
 
-    border: 0;
-  }
+  border: 0;
+}
 
-  .button-wrap__required-field {
-    color: $black-lighten;
+.button-wrap__required-field {
+  color: $black-lighten;
 
-    @include fonts($font-size-small, $line-height-big, 400);
-  }
+  @include fonts($font-size-small, $line-height-big, 400);
 }

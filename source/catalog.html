@@ -12,9 +12,11 @@
       </a>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__button-wrap">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
 
-        <div class="main-nav__wrapper">
+        <div class="main-nav__nav-wrap">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
@@ -38,11 +40,11 @@
 
     <main class="page-main">
       <section class="heading heading--catalog">
-        <div class="heading__wrapper-img">
+        <div class="heading__img-wrap">
           <img class="heading__logo heading__logo--short" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Заголовок «Седона»"><!--Размеры 150/150 временно-->
         </div>
 
-        <div class="heading__wrapper-title">
+        <div class="heading__title-wrap">
           <h1 class="heading__title">Оставьте свой отзыв</h1>
           <p class="heading__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
@@ -52,53 +54,53 @@
         <h2 class="visually-hidden">Галерея фото</h2>
         <ul class="gallery__list">
           <li class="gallery__item">
-            <figure class="gallery__picture picture-item">
+            <div class="gallery__picture picture-item">
               <a class="picture-item__link" href="#">
                 <img class="picture-item__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Изображение на фото: Дорога в лучах заката, уходящая за горизонт."><!--Размеры 150/150 временно-->
               </a>
-              <figcaption class="picture-item__desc">Неродные просторы</figcaption>
+              <p class="picture-item__desc">Неродные просторы</p>
               <p class="picture-item__autor">Автор фото: Борис</p>
               <p class="picture-item__like-count" aria-label="Счётчик лайков">1350</p>
-            </figure>
+            </div>
           </li>
           <li class="gallery__item">
-            <figure class="gallery__picture picture-item">
+            <div class="gallery__picture picture-item">
               <a class="picture-item__link" href="#">
                 <img class="picture-item__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Изображение на фото: Кактусоподобное растение крупным планом."><!--Размеры 150/150 временно-->
               </a>
-              <figcaption class="picture-item__desc">Местная растительность</figcaption>
+              <p class="picture-item__desc">Местная растительность</p>
               <p class="picture-item__autor">Автор фото: Сергей</p>
               <p class="picture-item__like-count" aria-label="Счётчик лайков">143</p>
-            </figure>
-            <li class="gallery__item">
-              <figure class="gallery__picture picture-item">
-                <a class="picture-item__link" href="#">
-                  <img class="picture-item__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Изображение на фото: Дорога в виде серпантина в горной местности."><!--Размеры 150/150 временно-->
-                </a>
-                <figcaption class="picture-item__desc">Дорога на Север</figcaption>
-                <p class="picture-item__autor">Автор фото: Петр</p>
-                <p class="picture-item__like-count" aria-label="Счётчик лайков">96</p>
-              </figure>
-            </li>
-            <li class="gallery__item">
-              <figure class="gallery__picture picture-item">
-                <a class="picture-item__link" href="#">
-                  <img class="picture-item__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Изображение на фото: Горный пейзаж и непосредственно достопримечательность под названием «Мост Дьявола»."><!--Размеры 150/150 временно-->
-                </a>
-                <figcaption class="picture-item__desc">Мост Дьявола</figcaption>
-                <p class="picture-item__autor">Автор фото: Антон</p>
-                <p class="picture-item__like-count" aria-label="Счётчик лайков">254</p>
-              </figure>
-            </li>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <div class="gallery__picture picture-item">
+              <a class="picture-item__link" href="#">
+                <img class="picture-item__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Изображение на фото: Дорога в виде серпантина в горной местности."><!--Размеры 150/150 временно-->
+              </a>
+              <p class="picture-item__desc">Дорога на Север</p>
+              <p class="picture-item__autor">Автор фото: Петр</p>
+              <p class="picture-item__like-count" aria-label="Счётчик лайков">96</p>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <div class="gallery__picture picture-item">
+              <a class="picture-item__link" href="#">
+                <img class="picture-item__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Изображение на фото: Горный пейзаж и непосредственно достопримечательность под названием «Мост Дьявола»."><!--Размеры 150/150 временно-->
+              </a>
+              <p class="picture-item__desc">Мост Дьявола</p>
+              <p class="picture-item__autor">Автор фото: Антон</p>
+              <p class="picture-item__like-count" aria-label="Счётчик лайков">254</p>
+            </div>
           </li>
         </ul>
       </section>
 
       <section class="video">
         <h2 class="visually-hidden">Видео о Седоне</h2>
-        <figure class="video__item">
+        <div class="video__item">
           <p class="video__title">Все еще сомневаетесь?</p>
-          <figcaption class="video__desc">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</figcaption>
+          <p class="video__desc">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           <video class="video__clip"  width="150" height="150"><!--Размеры 150/150 временно-->
             <source src="https://via.placeholder.com">
           </video>
@@ -111,12 +113,12 @@
             <button class="controls__subtitles" type="button" aria-label="Включить субтитры"></button>
             <button class="controls__full-screen" type="button" aria-label="Открыть на полный экран"></button>
           </div>
-        </figure>
+        </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrap">
         <p class="page-footer__text">#visitsedona</p>
 
         <div class="social">

@@ -1,29 +1,27 @@
-.video {
-  .video__item {
-    margin: 0;
-    padding-top: 32px;
-    padding-bottom: 38px;
+.video__item {
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 38px;
 
-    text-align: center;
+  text-align: center;
 
-    border-top: 1px solid $gray-400;
-  }
+  border-top: 1px solid $gray-400;
+}
 
-  .video__title {
-    margin-top: 0;
-    margin-bottom: 35px;
+.video__title {
+  margin-top: 0;
+  margin-bottom: 35px;
 
-    color: $black;
+  color: $black;
 
-    @include fonts($font-size-medium, $line-height-big, 700);
-  }
+  @include fonts($font-size-medium, $line-height-big, 700);
+}
 
-  .video__desc {
-    margin-top: 0;
-    margin-bottom: 33px;
+.video__desc {
+  margin-top: 0;
+  margin-bottom: 33px;
 
-    color: $black-lighten;
+  color: $black-lighten;
 
-    @include fonts($font-size-small, $line-height-medium);
-  }
+  @include fonts($font-size-small, $line-height-medium);
 }

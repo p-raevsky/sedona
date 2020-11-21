@@ -1,7 +1,5 @@
-.choice-item {
-  &__text {
-    color: $black;
+.choice-item__text {
+  color: $black;
 
-    @include fonts($font-size-medium, $line-height-big, 700, none);
-  }
+  @include fonts($font-size-medium, $line-height-big, 700, none);
 }

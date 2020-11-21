@@ -1,62 +1,33 @@
-.advantages {
+.advantages__item {
   text-align: center;
-
-  .advantages__title {
-    color: $black;
-
-    @include fonts($font-size-medium, $line-height-big, 700);
-  }
-
-  .advantages__text {
-    color: $black-lighten;
-
-    @include fonts($font-size-small, $line-height-small);
-  }
-
-  .advantages__wrapper-img {
-    background-color: $brown;
-  }
-
-  .advantages__wrapper-white {
-    padding: 35px 0;
-
-    h3 {
-      margin-top: 26px;
-      margin-bottom: 0;
-    }
-
-    p {
-      margin-top: 18px;
-      margin-bottom: 0;
-    }
-  }
 
   &--blue {
     background-color: $blue;
 
-    .advantages__title {
+
+    &-first {
+      padding-top: 34px;
+      padding-bottom: 39px;
+    }
+
+    &-second {
+      padding-top: 39px;
+      padding-bottom: 35px;
+    }
+
+    h3 {
       margin-top: 0;
       margin-bottom: 20px;
 
       color: $white;
     }
 
-    .advantages__text {
+    p {
       margin-top: 18px;
       margin-bottom: 0;
 
       color: $white;
     }
-  }
-
-  &--blue-first {
-    padding-top: 34px;
-    padding-bottom: 39px;
-  }
-
-  &--blue-second {
-    padding-top: 39px;
-    padding-bottom: 35px;
   }
 
   &--white-first {
@@ -85,5 +56,35 @@
   &--border {
     border-top: 1px solid $gray-900;
     border-bottom: 1px solid $gray-900;
+  }
+}
+
+.advantages__title {
+  color: $black;
+
+  @include fonts($font-size-medium, $line-height-big, 700);
+}
+
+.advantages__text {
+  color: $black-lighten;
+
+  @include fonts($font-size-small, $line-height-small);
+}
+
+.advantages__img-wrap {
+  background-color: $brown;
+}
+
+.advantages__white-wrap {
+  padding: 35px 0;
+
+  h3 {
+    margin-top: 26px;
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-top: 18px;
+    margin-bottom: 0;
   }
 }

@@ -4,18 +4,6 @@
   border: 0;
   border-top: 1px solid $gray-400;
 
-  .form-block__title {
-    margin: 0;
-    padding-top: 20px;
-    padding-bottom: 0;
-
-    @include fonts($font-size-medium, $line-height-big, 700);
-  }
-
-  .form-block__list {
-    @include list;
-  }
-
   &--user {
     padding-top: 0;
     padding-bottom: 25px;
@@ -61,15 +49,27 @@
       padding-bottom: 15px;
     }
   }
+}
 
-  .form-block__field {
+.form-block__title {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 0;
+
+  @include fonts($font-size-medium, $line-height-big, 700);
+}
+
+.form-block__list {
+  @include list;
+}
+
+.form-block__field {
+  color: $black;
+
+  @include fonts($font-size-medium, $line-height-big, 700);
+
+  &::placeholder {
     color: $black;
-
-    @include fonts($font-size-medium, $line-height-big, 700);
-
-    &::placeholder {
-      color: $black;
-      text-transform: none;
-    }
+    text-transform: none;
   }
 }

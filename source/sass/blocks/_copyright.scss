@@ -1,14 +1,13 @@
-
 .copyright {
   display: flex;
   align-items: center;
+}
 
-  &__text {
-    display: inline-block;
-    margin-right: 13px;
+.copyright__text {
+  display: inline-block;
+  margin-right: 13px;
 
-    color: $black;
+  color: $black;
 
-    @include fonts($font-size-small, $line-height-big);
-  }
+  @include fonts($font-size-small, $line-height-big);
 }

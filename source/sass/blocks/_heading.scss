@@ -12,32 +12,31 @@
   &--catalog {
     padding-bottom: 20px;
   }
+}
 
-  .heading__wrapper-img {
-    background: url("../img/back-mobile@1x.jpg") no-repeat 50% 50%;
-    background-color: $gray;
-  }
+.heading__img-wrap {
+  background: $gray url("../img/back-mobile@1x.jpg") no-repeat 50% 50%;
+}
 
-  .heading__title {
-    margin-top: 32px;
+.heading__title {
+  margin-top: 32px;
+  margin-bottom: 0;
+
+  color: $black;
+
+  @include fonts($font-size-medium, $line-height-big, 700);
+
+  &--form {
+    margin-top: 36px;
     margin-bottom: 0;
-
-    color: $black;
-
-    @include fonts($font-size-medium, $line-height-big, 700);
-
-    &--form {
-      margin-top: 36px;
-      margin-bottom: 0;
-    }
   }
+}
 
-  .heading__intro {
-    margin-top: 30px;
-    margin-bottom: 0;
+.heading__intro {
+  margin-top: 30px;
+  margin-bottom: 0;
 
-    color: $black-lighten;
+  color: $black-lighten;
 
-    @include fonts($font-size-small, $line-height-big);
-  }
+  @include fonts($font-size-small, $line-height-big);
 }

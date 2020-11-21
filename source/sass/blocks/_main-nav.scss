@@ -1,25 +1,23 @@
-.main-nav {
-  .main-nav__wrapper-button {
-    background-color: $white;
-  }
+.main-nav__button-wrap {
+  background-color: $white;
+}
 
-  .main-nav__list {
-    @include list;
-  }
+.main-nav__list {
+  @include list;
+}
 
-  .main-nav__item {
-    text-align: center;
+.main-nav__item {
+  text-align: center;
 
-    background-color: $blue;
-  }
+  background-color: $blue;
+}
 
-  .main-nav__link {
-    padding-top: 10px;
-    padding-bottom: 5px;
+.main-nav__link {
+  padding-top: 10px;
+  padding-bottom: 5px;
 
-    color: $white;
-    text-decoration: none;
+  color: $white;
+  text-decoration: none;
 
-    @include fonts($font-size-medium, $line-height-large, 700);
-  }
+  @include fonts($font-size-medium, $line-height-large, 700);
 }
