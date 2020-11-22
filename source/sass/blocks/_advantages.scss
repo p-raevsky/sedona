@@ -5,12 +5,12 @@
     background-color: $blue;
 
 
-    &-first {
+    &--first {
       padding-top: 34px;
       padding-bottom: 39px;
     }
 
-    &-second {
+    &--second {
       padding-top: 39px;
       padding-bottom: 35px;
     }
@@ -30,7 +30,7 @@
     }
   }
 
-  &--white-first {
+  &--white--first {
     h3 {
       margin: 0;
     }
