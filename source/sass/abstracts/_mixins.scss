@@ -1,0 +1,14 @@
+@mixin fonts($font-size, $line-height: $font-size, $font-weight: 400, $text-transform: uppercase) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-family: $font;
+  text-transform: $text-transform;
+}
+
+@mixin list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

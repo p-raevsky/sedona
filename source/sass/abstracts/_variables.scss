@@ -1,0 +1,59 @@
+// Font
+
+$font: (
+  "PT Sans",
+  "Arial",
+  sans-serif,
+);
+$font-size-small: 14px;
+$font-size-medium: 18px;
+$font-size-big: 21px;
+$font-size-large: 30px;
+$line-height-small: 21px;
+$line-height-medium: 24px;
+$line-height-big: 26px;
+$line-height-large: 40px;
+
+// Display size
+
+// White colors:
+
+$white: #ffffff;
+$white-20: rgba(#ffffff, 0.2);
+$white-30: rgba(#ffffff, 0.3);
+$white-60: rgba(#ffffff, 0.6);
+
+// Black colors:
+
+$black: #000000;
+$black-30: rgba(#000000, 0.3);
+$black-60: rgba(#000000, 0.6);
+$black-lighten: #333333;
+$black-lighten-30: rgba(#333333, 0.3);
+
+// Blue colors:
+
+$blue: #81b3d2;
+$blue-60: rgba(#81b3d2, 0.6);
+$blue-30: rgba(#81b3d2, 0.3);
+$blue-darken: #669ec0;
+$blue-darkest: #5496bd;
+
+// Gray colors:
+
+$gray: #eeeeee;
+$gray-300: #e6e6e6;
+$gray-400: #e5e5e5;
+$gray-500: #eaeaea;
+$gray-600: #f2f2f2;
+$gray-700: #d5d5d5;
+$gray-800: #dbdbdb;
+$gray-900: #d6d6d6;
+$gray-1000: #5c6870;
+
+// Brown colors:
+
+$brown: #c48d6c;
+$brown-darken: #766357;
+$brown-darkest: #604e43;
+$brown-30: rgba(#766357, 0.3);

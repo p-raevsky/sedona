@@ -1,0 +1,36 @@
+.picture-item {
+  margin: 0;
+  padding-top: 22px;
+  padding-bottom: 15px;
+
+  text-align: left;
+
+  border-top: 1px solid $gray-400;
+}
+
+.picture-item__like-count,
+.picture-item__desc {
+  color: $black;
+
+  @include fonts($font-size-small, $line-height-medium, 700, none);
+}
+
+.picture-item__desc {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.picture-item__autor {
+  margin-top: 10px;
+  margin-bottom: 0;
+
+  color: $black-lighten;
+
+  @include fonts($font-size-small, $line-height-medium, 400, none);
+}
+
+.picture-item__like-count {
+  margin-top: 13px;
+  margin-bottom: 0;
+  padding-left: 37px;
+}

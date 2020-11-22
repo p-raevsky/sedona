@@ -1,0 +1,75 @@
+.form-block {
+  padding: 0;
+
+  border: 0;
+  border-top: 1px solid $gray-400;
+
+  &--user {
+    padding-top: 0;
+    padding-bottom: 25px;
+
+    p {
+      padding-bottom: 17px;
+    }
+  }
+
+  &--contacts {
+    padding-top: 0;
+    padding-bottom: 28px;
+
+    p {
+      padding-bottom: 19px;
+    }
+  }
+
+  &--feeling {
+    padding-top: 0;
+    padding-bottom: 41px;
+
+    p {
+      padding-bottom: 25px;
+    }
+  }
+
+  &--attractions {
+    padding-top: 0;
+    padding-bottom: 39px;
+
+    p {
+      padding-top: 15px;
+      padding-bottom: 25px;
+    }
+  }
+
+  &--write-us {
+    padding-top: 0;
+    padding-bottom: 51px;
+
+    p {
+      padding-bottom: 15px;
+    }
+  }
+}
+
+.form-block__title {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 0;
+
+  @include fonts($font-size-medium, $line-height-big, 700);
+}
+
+.form-block__list {
+  @include list;
+}
+
+.form-block__field {
+  color: $black;
+
+  @include fonts($font-size-medium, $line-height-big, 700);
+
+  &::placeholder {
+    color: $black;
+    text-transform: none;
+  }
+}

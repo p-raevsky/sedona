@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -11,24 +12,26 @@
       </a>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__button-wrap">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
 
-        <div class="main-nav__wrapper">
+        <div class="main-nav__nav-wrap">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link title-general" href="index.html">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
 
             <li class="main-nav__item">
-              <a class="main-nav__link title-general">Фото и видео</a>
+              <a class="main-nav__link">Фото и видео</a>
             </li>
 
             <li class="main-nav__item">
-              <a class="main-nav__link title-general" href="form.html">Форма отзыва</a>
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
             </li>
 
             <li class="main-nav__item">
-              <a class="main-nav__link title-general" href="#">Html academy</a>
+              <a class="main-nav__link" href="#">Html academy</a>
             </li>
           </ul>
         </div>
@@ -36,99 +39,104 @@
     </header>
 
     <main class="page-main">
-      <section class="heading">
-        <img class="heading__logo heading__logo--short" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Заголовок «Седона»"><!--Размеры 150/150 временно-->
-        <h1 class="heading__title title-general">Фото и видео</h1>
-        <p class="heading__intro text-general">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <section class="heading heading--catalog">
+        <div class="heading__img-wrap">
+          <img class="heading__logo heading__logo--short" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Заголовок «Седона»"><!--Размеры 150/150 временно-->
+        </div>
+
+        <div class="heading__title-wrap">
+          <h1 class="heading__title">Оставьте свой отзыв</h1>
+          <p class="heading__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
       </section>
 
       <section class="gallery">
         <h2 class="visually-hidden">Галерея фото</h2>
         <ul class="gallery__list">
           <li class="gallery__item">
-            <figure class="gallery__picture picture-item">
+            <div class="gallery__picture picture-item">
               <a class="picture-item__link" href="#">
                 <img class="picture-item__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Изображение на фото: Дорога в лучах заката, уходящая за горизонт."><!--Размеры 150/150 временно-->
               </a>
-              <figcaption class="picture-item__desc title-general">Неродные просторы</figcaption>
-              <p class="picture-item__autor text-general">Автор фото: Борис</p>
-              <p class="picture-item__like-count title-general" aria-label="Счётчик лайков">1350</p>
-            </figure>
+              <p class="picture-item__desc">Неродные просторы</p>
+              <p class="picture-item__autor">Автор фото: Борис</p>
+              <p class="picture-item__like-count" aria-label="Счётчик лайков">1350</p>
+            </div>
           </li>
           <li class="gallery__item">
-            <figure class="gallery__picture picture-item">
+            <div class="gallery__picture picture-item">
               <a class="picture-item__link" href="#">
                 <img class="picture-item__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Изображение на фото: Кактусоподобное растение крупным планом."><!--Размеры 150/150 временно-->
               </a>
-              <figcaption class="picture-item__desc title-general">Местная растительность</figcaption>
-              <p class="picture-item__autor text-general">Автор фото: Сергей</p>
-              <p class="picture-item__like-count title-general" aria-label="Счётчик лайков">143</p>
-            </figure>
-            <li class="gallery__item">
-              <figure class="gallery__picture picture-item">
-                <a class="picture-item__link" href="#">
-                  <img class="picture-item__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Изображение на фото: Дорога в виде серпантина в горной местности."><!--Размеры 150/150 временно-->
-                </a>
-                <figcaption class="picture-item__desc title-general">Дорога на Север</figcaption>
-                <p class="picture-item__autor text-general">Автор фото: Петр</p>
-                <p class="picture-item__like-count title-general" aria-label="Счётчик лайков">96</p>
-              </figure>
-            </li>
-            <li class="gallery__item">
-              <figure class="gallery__picture picture-item">
-                <a class="picture-item__link" href="#">
-                  <img class="picture-item__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Изображение на фото: Горный пейзаж и непосредственно достопримечательность под названием «Мост Дьявола»."><!--Размеры 150/150 временно-->
-                </a>
-                <figcaption class="picture-item__desc title-general">Мост Дьявола</figcaption>
-                <p class="picture-item__autor text-general">Автор фото: Антон</p>
-                <p class="picture-item__like-count title-general" aria-label="Счётчик лайков">254</p>
-              </figure>
-            </li>
+              <p class="picture-item__desc">Местная растительность</p>
+              <p class="picture-item__autor">Автор фото: Сергей</p>
+              <p class="picture-item__like-count" aria-label="Счётчик лайков">143</p>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <div class="gallery__picture picture-item">
+              <a class="picture-item__link" href="#">
+                <img class="picture-item__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Изображение на фото: Дорога в виде серпантина в горной местности."><!--Размеры 150/150 временно-->
+              </a>
+              <p class="picture-item__desc">Дорога на Север</p>
+              <p class="picture-item__autor">Автор фото: Петр</p>
+              <p class="picture-item__like-count" aria-label="Счётчик лайков">96</p>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <div class="gallery__picture picture-item">
+              <a class="picture-item__link" href="#">
+                <img class="picture-item__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Изображение на фото: Горный пейзаж и непосредственно достопримечательность под названием «Мост Дьявола»."><!--Размеры 150/150 временно-->
+              </a>
+              <p class="picture-item__desc">Мост Дьявола</p>
+              <p class="picture-item__autor">Автор фото: Антон</p>
+              <p class="picture-item__like-count" aria-label="Счётчик лайков">254</p>
+            </div>
           </li>
         </ul>
       </section>
 
       <section class="video">
         <h2 class="visually-hidden">Видео о Седоне</h2>
-        <figure class="video__item">
-          <p class="video__title title-general">Все еще сомневаетесь?</p>
-          <figcaption class="video__desc text-general">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</figcaption>
+        <div class="video__item">
+          <p class="video__title">Все еще сомневаетесь?</p>
+          <p class="video__desc">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           <video class="video__clip"  width="150" height="150"><!--Размеры 150/150 временно-->
             <source src="https://via.placeholder.com">
           </video>
           <div class="video__block controls">
             <div class="controls__scale">
-              <div class="controls__bar"></div>
+              <progress class="controls__bar" max="100" value="20"></progress>
             </div>
             <div class="controls__toggle" tabindex="0"></div>
             <button class="controls__restart" type="button" aria-label="Обновить"></button>
             <button class="controls__subtitles" type="button" aria-label="Включить субтитры"></button>
             <button class="controls__full-screen" type="button" aria-label="Открыть на полный экран"></button>
           </div>
-        </figure>
+        </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <p class="page-footer__text title-general">#visitsedona</p>
+      <div class="page-footer__wrap">
+        <p class="page-footer__text">#visitsedona</p>
 
         <div class="social">
-          <ul class="social__list list">
-            <li class="social__item social-item">
-              <a class="social-item__link social-item__link--tw" href="#"><span class="visually-hidden">Твитер</span></a>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--tw" href="#"><span class="visually-hidden">Твитер</span></a>
             </li>
-            <li class="social__item social-item">
-              <a class="social-item__link social-item__link--fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
             </li>
-            <li class="social__item social-item">
-              <a class="social-item__link social-item__link--yt" href="#"><span class="visually-hidden">Ютуб</span></a>
+            <li class="social__item">
+              <a class="social__link social__link--yt" href="#"><span class="visually-hidden">Ютуб</span></a>
             </li>
           </ul>
         </div>
 
         <div class="copyright">
-          <p class="copyright__text text-general">Разработано</p>
+          <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <img class="copyright__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип HTML Academy, ссылка ведёт на лендинг интенсива «Профессиональный HTML и CSS, уровень 2">
           </a>

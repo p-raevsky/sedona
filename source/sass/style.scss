@@ -1,1 +1,23 @@
-// Начните писать стили здесь
+@import "abstracts/normalize.scss";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "base/font";
+@import "blocks/page.scss";
+@import "blocks/visually-hidden";
+@import "blocks/main-nav";
+@import "blocks/button";
+@import "blocks/page-main";
+@import "blocks/heading";
+@import "blocks/advantages";
+@import "blocks/gallery";
+@import "blocks/picture-item";
+@import "blocks/video";
+@import "blocks/form";
+@import "blocks/form-block";
+@import "blocks/choice-item";
+@import "blocks/data-item";
+@import "blocks/search";
+@import "blocks/button-wrap";
+@import "blocks/page-footer";
+@import "blocks/social";
+@import "blocks/copyright";
