@@ -2,20 +2,13 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип «Седона»"><!--Размеры 150/150 временно-->
-      </a>
-
       <nav class="main-nav">
-        <div class="main-nav__button-wrap">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        </div>
-
         <div class="main-nav__nav-wrap">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -36,6 +29,14 @@
           </ul>
         </div>
       </nav>
+
+      <div class="main-nav__button-wrap">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
+
+      <a class="page-header__logo">
+        <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип «Седона»"><!--Размеры 150/150 временно-->
+      </a>
     </header>
 
     <main class="page-main">
@@ -45,7 +46,7 @@
         </div>
 
         <div class="heading__title-wrap">
-          <h1 class="heading__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <h1 class="heading__title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
           <p class="heading__intro ">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
       </section>
@@ -60,7 +61,7 @@
             <p class="advantages__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
 
-          <div class="advantages__img-wrap">
+          <div class="advantages__img-wrap advantages__img-wrap--first">
             <img class="advantages__image advantages__image--after" src="https://via.placeholder.com/150x150" width="150" height="150" alt="На фото запечатлена городская сцена на фоне гор."><!--Размеры 150/150 временно-->
           </div>
 
@@ -87,7 +88,7 @@
             <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
 
-          <div class="advantages__img-wrap">
+          <div class="advantages__img-wrap advantages__img-wrap--second">
             <img class="advantages__image advantages__image--before" src="https://via.placeholder.com/150x150" width="150" height="150" alt="На фото запечатлен горный пейзаж и непосредственно достопримечательность под названием «Мост Дьявола»."><!--Размеры 150/150 временно-->
           </div>
 

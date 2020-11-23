@@ -15,18 +15,27 @@
 }
 
 .search__text {
+  width: 90%;
+  margin: auto;
   margin-top: 0;
   margin-bottom: 27px;
 
   color: $black-lighten;
 
   @include fonts($font-size-small, $line-height-medium);
+  @media (min-width: $tablet) {
+    max-width: 396px;
+  }
 }
 
 .search__button {
-  width: 230px;
+  width: 72%;
+  margin: auto;
   padding-right: 25px;
   padding-left: 25px;
+  @media (min-width: $tablet) {
+    max-width: 458px;
+  }
 }
 
 .search__img-wrap {

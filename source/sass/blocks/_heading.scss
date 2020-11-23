@@ -3,6 +3,9 @@
 
   &--main {
     padding-bottom: 48px;
+    @media (min-width: $tablet) {
+      padding-bottom: 53px;
+    }
   }
 
   &--form {
@@ -15,10 +18,23 @@
 }
 
 .heading__img-wrap {
-  background: $gray url("../img/back-mobile@1x.jpg") no-repeat 50% 50%;
+  width: 100%;
+  height: 389px;
+
+  background: url("../img/back-mobile@1x.jpg") no-repeat 50% 50%;
+
+  @media (min-width: $tablet) {
+    height: 518px;
+  }
+}
+
+.heading__logo {
+  margin-top: 90px;
 }
 
 .heading__title {
+  width: 85%;
+  margin: auto;
   margin-top: 32px;
   margin-bottom: 0;
 
@@ -30,9 +46,15 @@
     margin-top: 36px;
     margin-bottom: 0;
   }
+
+  @media (min-width: $tablet) {
+    margin-top: 44px;
+  }
 }
 
 .heading__intro {
+  width: 85%;
+  margin: auto;
   margin-top: 30px;
   margin-bottom: 0;
 
