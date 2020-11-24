@@ -3,19 +3,14 @@
   display: flex;
   flex-direction: column;
 
+  background-color: $white;
+
   @include list;
 
   @media (min-width: $tablet) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    padding-right: 11px;
-    padding-left: 34px;
-  }
-  @media (min-width: $desktop) {
-    padding-right: 55px;
-    padding-left: 76px;
   }
 }
 
@@ -23,7 +18,16 @@
   text-align: center;
 
   background-color: $blue;
+
+  &:nth-child(2) {
+    @media (min-width: $tablet) {
+      margin-right: auto;
+    }
+  }
+
   @media (min-width: $tablet) {
+    width: 20%;
+
     background-color: $white;
   }
 }
@@ -35,18 +39,12 @@
   text-decoration: none;
 
   @include fonts($font-size-medium, $line-height-large, 700);
+
   @media (min-width: $tablet) {
     margin: 16px 0 14px;
-    padding: 0 15px;
 
     color: $black;
 
     @include fonts($font-size-small, $line-height-big, 700);
-  }
-}
-
-.main-nav__item:nth-child(2) {
-  @media (min-width: $tablet) {
-    margin-right: auto;
   }
 }
