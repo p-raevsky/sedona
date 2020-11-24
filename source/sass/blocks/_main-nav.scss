@@ -7,6 +7,10 @@
 
   @include list;
 
+  @media (max-width: $mobile-max) {
+    padding-bottom: 56px;
+  }
+
   @media (min-width: $tablet) {
     flex-direction: row;
     flex-wrap: wrap;

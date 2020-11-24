@@ -4,17 +4,6 @@
   text-align: center;
 }
 
-.main-nav__button-wrap {
-  width: 100%;
-  height: 56px;
-
-  background-color: $white;
-
-  @media (min-width: $tablet) {
-    display: none;
-  }
-}
-
 .main-nav__toggle {
   position: absolute;
   top: 17px;
