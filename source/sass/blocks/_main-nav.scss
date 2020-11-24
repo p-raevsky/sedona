@@ -1,23 +1,54 @@
-.main-nav__button-wrap {
-  background-color: $white;
-}
 
 .main-nav__list {
+  display: flex;
+  flex-direction: column;
+
+  background-color: $white;
+
   @include list;
+
+  @media (max-width: $mobile-max) {
+    padding-bottom: 56px;
+  }
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .main-nav__item {
   text-align: center;
 
   background-color: $blue;
+
+  &:nth-child(2) {
+    @media (min-width: $tablet) {
+      margin-right: auto;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    width: 20%;
+
+    background-color: $white;
+  }
 }
 
 .main-nav__link {
-  padding-top: 10px;
-  padding-bottom: 5px;
+  display: block;
 
   color: $white;
   text-decoration: none;
 
   @include fonts($font-size-medium, $line-height-large, 700);
+
+  @media (min-width: $tablet) {
+    margin: 16px 0 14px;
+
+    color: $black;
+
+    @include fonts($font-size-small, $line-height-big, 700);
+  }
 }

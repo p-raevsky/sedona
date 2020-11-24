@@ -1,0 +1,26 @@
+.page-header {
+  position: relative;
+
+  text-align: center;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.page-header__logo {
+  position: absolute;
+  top: 160px;
+  left: 50%;
+
+  transform: translate(-50%, 0);
+  @media (min-width: $tablet) {
+    top: 0;
+  }
+}

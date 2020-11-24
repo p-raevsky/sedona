@@ -16,6 +16,10 @@ $line-height-large: 40px;
 
 // Display size
 
+$tablet: 768px;
+$desktop: 1200px;
+$mobile-max: 767px;
+
 // White colors:
 
 $white: #ffffff;
@@ -26,6 +30,7 @@ $white-60: rgba(#ffffff, 0.6);
 // Black colors:
 
 $black: #000000;
+$black-20: rgba(#000000, 0.2);
 $black-30: rgba(#000000, 0.3);
 $black-60: rgba(#000000, 0.6);
 $black-lighten: #333333;

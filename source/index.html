@@ -2,21 +2,14 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo">
-        <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип «Седона»"><!--Размеры 150/150 временно-->
-      </a>
-
-      <nav class="main-nav">
-        <div class="main-nav__button-wrap">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        </div>
-
-        <div class="main-nav__nav-wrap">
+    <div class="page__wrap">
+      <header class="page-header">
+        <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link">Главная</a>
@@ -33,102 +26,105 @@
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">Html academy</a>
             </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="page-main">
-      <section class="heading heading--main">
-        <div class="heading__img-wrap">
-          <img class="heading__logo heading__logo--big" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Welcome to the gordeous Sedona. «Because the Grand Canyon sucks!». Перевод с английского: Добро пожаловать в великолепную Седону. «Потому что Гранд-Каньон - отстой!»"><!--Размеры 150/150 временно-->
-        </div>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
-        <div class="heading__title-wrap">
-          <h1 class="heading__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-          <p class="heading__intro ">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </div>
-      </section>
+        <a class="page-header__logo">
+          <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип «Седона»"><!--Размеры 150/150 временно-->
+        </a>
+      </header>
 
-      <section class="advantages">
-        <h2 class="visually-hidden">Преимущества Седоны</h2>
-
-        <div class="advantages__list">
-          <div class="advantages__item advantages__item--blue advantages__item--blue--first">
-            <h3 class="advantages__title">Настоящий городок</h3>
-            <p class="advantages__text">— №1 —</p>
-            <p class="advantages__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+      <main class="page-main">
+        <section class="heading heading--main">
+          <div class="heading__img-wrap">
+            <img class="heading__logo heading__logo--big" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Welcome to the gordeous Sedona. «Because the Grand Canyon sucks!». Перевод с английского: Добро пожаловать в великолепную Седону. «Потому что Гранд-Каньон - отстой!»"><!--Размеры 150/150 временно-->
           </div>
 
-          <div class="advantages__img-wrap">
-            <img class="advantages__image advantages__image--after" src="https://via.placeholder.com/150x150" width="150" height="150" alt="На фото запечатлена городская сцена на фоне гор."><!--Размеры 150/150 временно-->
+          <div class="heading__title-wrap">
+            <h1 class="heading__title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
+            <p class="heading__intro ">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </div>
+        </section>
 
-          <div class="advantages__white-wrap">
-            <div class="advantages__item advantages__item--white advantages__item--white--first" >
-              <h3 class="advantages__title">Жилье</h3>
-              <p class="advantages__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        <section class="advantages">
+          <h2 class="visually-hidden">Преимущества Седоны</h2>
+
+          <div class="advantages__list">
+            <div class="advantages__item advantages__item--blue advantages__item--blue--first">
+              <h3 class="advantages__title">Настоящий городок</h3>
+              <p class="advantages__text">— №1 —</p>
+              <p class="advantages__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
 
-            <div class="advantages__item advantages__item--white">
-              <h3 class="advantages__title">Сувениры</h3>
-              <p class="advantages__text">Не только китайского, но и местного производства!</p>
+            <div class="advantages__img-wrap advantages__img-wrap--first">
+              <img class="advantages__image advantages__image--after" src="https://via.placeholder.com/150x150" width="150" height="150" alt="На фото запечатлена городская сцена на фоне гор."><!--Размеры 150/150 временно-->
             </div>
 
-            <div class="advantages__item advantages__item--white">
-              <h3 class="advantages__title">Еда</h3>
-              <p class="advantages__text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+            <div class="advantages__white-wrap">
+              <div class="advantages__item advantages__item--white advantages__item--white--first" >
+                <h3 class="advantages__title">Жилье</h3>
+                <p class="advantages__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </div>
+
+              <div class="advantages__item advantages__item--white">
+                <h3 class="advantages__title">Сувениры</h3>
+                <p class="advantages__text">Не только китайского, но и местного производства!</p>
+              </div>
+
+              <div class="advantages__item advantages__item--white">
+                <h3 class="advantages__title">Еда</h3>
+                <p class="advantages__text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+              </div>
+            </div>
+
+            <div class="advantages__item advantages__item--blue advantages__item--blue--second">
+              <h3 class="advantages__title">Там есть мост дьявола</h3>
+              <p class="advantages__text">— №2 —</p>
+              <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+
+            <div class="advantages__img-wrap advantages__img-wrap--second">
+              <img class="advantages__image advantages__image--before" src="https://via.placeholder.com/150x150" width="150" height="150" alt="На фото запечатлен горный пейзаж и непосредственно достопримечательность под названием «Мост Дьявола»."><!--Размеры 150/150 временно-->
+            </div>
+
+            <div class="advantages__item advantages__item--gray">
+              <h3 class="advantages__title">Небольшая площадь</h3>
+              <p class="advantages__text">— №3 —</p>
+              <p class="advantages__text">Все интересные места находятся очень близко</p>
+            </div>
+
+            <div class="advantages__item advantages__item--gray advantages__item--border">
+              <h3 class="advantages__title">Красивая дорога</h3>
+              <p class="advantages__text">— №4 —</p>
+              <p class="advantages__text">Ехать в седону из Лас-вегаса совсем не скучно!</p>
+            </div>
+
+            <div class="advantages__item advantages__item--gray">
+              <h3 class="advantages__title">Мало туристов</h3>
+              <p class="advantages__text">— №5 —</p>
+              <p class="advantages__text">Большинство едет в гранд каньон и толпится там</p>
             </div>
           </div>
+        </section>
 
-          <div class="advantages__item advantages__item--blue advantages__item--blue--second">
-            <h3 class="advantages__title">Там есть мост дьявола</h3>
-            <p class="advantages__text">— №2 —</p>
-            <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        <section class="search">
+          <div class="search__wrap">
+            <h2 class="visually-hidden">Найти гостинницу</h2>
+
+            <p class="search__title">Заинтересовались?</p>
+            <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+
+            <a class="search__button button" href="#">Найти гостинницу</a>
           </div>
-
-          <div class="advantages__img-wrap">
-            <img class="advantages__image advantages__image--before" src="https://via.placeholder.com/150x150" width="150" height="150" alt="На фото запечатлен горный пейзаж и непосредственно достопримечательность под названием «Мост Дьявола»."><!--Размеры 150/150 временно-->
+          <div class="search__img-wrap">
+            <iframe class="search__iframe-map"></iframe> <!--Потом вставлю код-->
+            <img class="search__image-map" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Седона. Аризона">
           </div>
+        </section>
+      </main>
 
-          <div class="advantages__item advantages__item--gray">
-            <h3 class="advantages__title">Небольшая площадь</h3>
-            <p class="advantages__text">— №3 —</p>
-            <p class="advantages__text">Все интересные места находятся очень близко</p>
-          </div>
-
-          <div class="advantages__item advantages__item--gray advantages__item--border">
-            <h3 class="advantages__title">Красивая дорога</h3>
-            <p class="advantages__text">— №4 —</p>
-            <p class="advantages__text">Ехать в седону из Лас-вегаса совсем не скучно!</p>
-          </div>
-
-          <div class="advantages__item advantages__item--gray">
-            <h3 class="advantages__title">Мало туристов</h3>
-            <p class="advantages__text">— №5 —</p>
-            <p class="advantages__text">Большинство едет в гранд каньон и толпится там</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="search">
-        <div class="search__wrap">
-          <h2 class="visually-hidden">Найти гостинницу</h2>
-
-          <p class="search__title">Заинтересовались?</p>
-          <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-
-          <a class="search__button button" href="#">Найти гостинницу</a>
-        </div>
-        <div class="search__img-wrap">
-          <iframe class="search__iframe-map"></iframe> <!--Потом вставлю код-->
-          <img class="search__image-map" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Седона. Аризона">
-        </div>
-      </section>
-    </main>
-
-    <footer class="page-footer">
-      <div class="page-footer__wrap">
+      <footer class="page-footer">
         <p class="page-footer__text">#visitsedona</p>
 
         <div class="social">
@@ -151,7 +147,7 @@
             <img class="copyright__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип HTML Academy, ссылка ведёт на лендинг интенсива «Профессиональный HTML и CSS, уровень 2">
           </a>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
