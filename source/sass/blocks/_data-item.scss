@@ -1,13 +1,120 @@
+.data-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &--contacts {
+    position: relative;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 32px;
+      right: 0;
+
+      background-color: $gray-300;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media (min-width: $desktop) {
+        top: 0;
+      }
+    }
+
+    &--tel {
+      &::after {
+        width: 18px;
+        height: 18px;
+        padding: 20px 19px 20px 21px;
+
+        background-image: url("../img/phone.svg");
+
+        @media (min-width: $desktop) {
+          right: 79px;
+        }
+      }
+
+      @media (min-width: $desktop) {
+        padding-right: 79px;
+      }
+    }
+
+    &--mail {
+      &::after {
+        width: 16px;
+        height: 12px;
+        padding: 23px 21px;
+
+        background-image: url("../img/mail.svg");
+      }
+    }
+
+    @media (min-width: $desktop) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+}
+
 .data-item__text {
+  padding-right: 14px;
+
   color: $black-lighten;
 
   @include fonts($font-size-small, $line-height-big);
+
+  &--contacts {
+    padding-right: 0;
+    padding-bottom: 6px;
+    padding-left: 22px;
+
+    @media (min-width: $desktop) {
+      min-width: max-content;
+      padding: 0;
+      padding-right: 17px;
+    }
+  }
+
+  &--del {
+    padding-right: 0;
+    @media (min-width: $desktop) {
+      display: none;
+    }
+  }
 }
 
 .data-item__field {
+  flex: auto;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 18px 22px 14px;
+
   color: $black;
 
+  background-color: $gray-600;
+  border: none;
+  outline: 0;
+
   @include fonts($font-size-medium, $line-height-big, 700);
+
+  &--width {
+    padding-right: 80px;
+  }
+
+  &:hover:not(:focus):not(:active) {
+    background-color: $gray-400;
+  }
+
+  &:focus,
+  &:active {
+    box-sizing: border-box;
+
+    background-color: $white;
+    box-shadow: inset 0 0 0 4px $gray-400;
+  }
 
   &::placeholder {
     color: $black;

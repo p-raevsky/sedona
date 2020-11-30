@@ -3,7 +3,23 @@
     display: grid;
 
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+  }
+}
+
+.advantages__image {
+  display: block;
+  width: 100%;
+
+  object-fit: cover;
+
+  @media (max-width: $mobile-max) {
+    width: 100%;
+    height: 260px;
+  }
+
+  @media (min-width: $tablet) {
+    min-height: 100%;
   }
 }
 
@@ -17,6 +33,7 @@
       grid-area: 1/2/2/4;
     }
   }
+
   &--second {
     @media (min-width: $tablet) {
       grid-area: 3/1/4/3;
@@ -42,15 +59,49 @@
 
     background-color: $blue;
 
-
     &--first {
-      padding-top: 34px;
-      padding-bottom: 39px;
+      position: relative;
+
+      @media (max-width: $mobile-max) {
+        padding-top: 71px;
+        padding-bottom: 39px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 50%;
+
+          width: 768px;
+          height: 37px;
+
+          background: url("../img/advantages-triangle.svg") no-repeat;
+          transform: translate(-50%, 0);
+        }
+      }
+
+      @media (min-width: $tablet) {
+        padding-top: 40px;
+        padding-bottom: 44px;
+      }
+
+      @media (min-width: $desktop) {
+        padding: 47px 52px 57px;
+      }
     }
 
     &--second {
       padding-top: 39px;
       padding-bottom: 35px;
+
+      @media (min-width: $tablet) {
+        padding-top: 43px;
+        padding-bottom: 41px;
+      }
+
+      @media (min-width: $desktop) {
+        padding: 51px 78px 53px;
+      }
     }
 
     h3 {
@@ -67,27 +118,141 @@
       margin-bottom: 0;
 
       color: $white;
+
+      @media (min-width: $tablet) {
+        width: 77%;
+      }
+
+      @media (min-width: $desktop) {
+        width: 95%;
+      }
+    }
+
+    br {
+      @media (max-width: $mobile-max) {
+        display: none;
+      }
     }
   }
 
   &--white {
-    width: 70%;
-    padding-left: 40px;
+    position: relative;
 
-    text-align: left;
+    width: 70%;
+    padding-left: 44px;
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    @media (min-width: $tablet) {
+      padding: 0;
+
+      text-align: center;
+    }
+
     h3 {
       margin-top: 26px;
       margin-bottom: 0;
+
+      @media (min-width: $tablet) {
+        margin: 0;
+        padding-top: 158px;
+      }
     }
 
     p {
       margin-top: 18px;
       margin-bottom: 0;
+
+      @media (min-width: $tablet) {
+        width: 82%;
+        margin: 18px auto 0;
+      }
     }
 
     &--first {
+      &::before {
+        top: -8px;
+        left: -5px;
+
+        width: 39px;
+        height: 37px;
+
+        background-image: url("../img/icon-house.svg");
+
+        @media (min-width: $tablet) {
+          top: 59px;
+          left: 50%;
+
+          width: 75px;
+          height: 72px;
+
+          transform: translateX(-50%);
+        }
+      }
+
       h3 {
         margin: 0;
+      }
+    }
+
+    &--second {
+      &::before {
+        top: 15px;
+        left: 0;
+
+        width: 32px;
+        height: 38px;
+
+        background-image: url("../img/icon-gift.svg");
+
+        @media (min-width: $tablet) {
+          top: 57px;
+          left: 50%;
+
+          width: 64px;
+          height: 75px;
+
+          transform: translateX(-50%);
+        }
+      }
+
+      @media (min-width: $tablet) {
+        order: 3;
+      }
+    }
+
+    &--third {
+      &::before {
+        top: 20px;
+        left: -7px;
+
+        width: 40px;
+        height: 35px;
+
+        background-image: url("../img/icon-burger.svg");
+
+        @media (min-width: $tablet) {
+          top: 63px;
+          left: 50%;
+
+          width: 76px;
+          height: 68px;
+
+          transform: translateX(-50%);
+        }
+      }
+
+      br {
+        @media (max-width: $mobile-max) {
+          display: none;
+        }
       }
     }
   }
@@ -110,6 +275,20 @@
       margin: auto;
       margin-top: 18px;
       margin-bottom: 0;
+
+      @media (min-width: $tablet) {
+        width: 100%;
+      }
+    }
+
+    br {
+      @media (max-width: $mobile-max) {
+        display: none;
+      }
+    }
+
+    @media (min-width: $tablet) {
+      padding: 42px 40px 41px 33px;
     }
   }
 
@@ -122,13 +301,13 @@
 .advantages__white-wrap {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 35px 0;
+  align-items: flex-start;
+  padding: 35px 0 35px 6%;
 
   @media (min-width: $tablet) {
     flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 20px 59px 25px;
 
     grid-area: 2/1/3/4;
   }

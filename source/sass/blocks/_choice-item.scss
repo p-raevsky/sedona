@@ -1,5 +1,82 @@
 .choice-item__text {
+  position: relative;
+
+  padding-left: 78px;
+
   color: $black;
 
   @include fonts($font-size-medium, $line-height-big, 700, none);
+
+  @media (min-width: $tablet) {
+    margin-left: 4px;
+  }
+
+  &--attractions {
+    @media (min-width: $tablet) {
+      margin-left: 0;
+    }
+  }
+}
+
+.choice-item__input + .choice-item__text::before {
+  content: "";
+  position: absolute;
+  top: -17px;
+  left: 0;
+
+  width: 58px;
+  height: 58px;
+
+  background-color: $gray-600;
+  border-radius: 50%;
+}
+
+.choice-item__input:checked + .choice-item__text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 17px;
+
+  width: 24px;
+  height: 24px;
+
+  background-color: $black-lighten;
+  border-radius: 50%;
+}
+
+.choice-item__input:hover + .choice-item__text::before {
+  background-color: $gray-400;
+}
+
+.choice-item__input:active + .choice-item__text::before {
+  background-color: $gray-700;
+}
+
+.choice-item__input:checked:active + .choice-item__text::after {
+  opacity: 0.3;
+}
+
+.choice-item__input + .choice-item__text--attractions::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: 0;
+
+  width: 56px;
+  height: 56px;
+
+  background-color: $gray-600;
+  border-radius: 5px;
+}
+
+.choice-item__input:checked + .choice-item__text--attractions::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 18px;
+
+  width: 23px;
+  height: 16px;
+
+  background: url("../img/tick.svg") no-repeat 50% 50%;
 }

@@ -8,6 +8,8 @@
   display: grid;
   align-content: start;
 
+  background-color: $white;
+
   grid-template-rows: min-content 1fr min-content;
 
   @media (min-width: $desktop) {

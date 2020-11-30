@@ -7,12 +7,54 @@
   @include list;
 }
 
-.social__link {
-  display: block;
+.social__item {
   width: 46px;
   height: 48px;
 
+  background-color: $blue;
+
+  &:hover {
+    background-color: $blue-darken;
+  }
+
+  &:active {
+    background-color: $blue-darkest;
+  }
+}
+
+.social__link {
+  display: block;
+
   text-decoration: none;
 
-  background-color: $blue;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--tw {
+    width: 18px;
+    height: 15px;
+    padding: 16px 14px;
+
+    background-image: url("../img/twitter.svg");
+  }
+
+  &--fb {
+    width: 9px;
+    height: 19px;
+    padding: 14px 18px;
+
+    background-image: url("../img/facebook.svg");
+  }
+
+  &--yt {
+    width: 20px;
+    height: 14px;
+    padding: 17px 13px;
+
+    background-image: url("../img/youtube.svg");
+  }
+
+  &:active {
+    opacity: 0.3;;
+  }
 }
