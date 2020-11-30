@@ -36,6 +36,7 @@
 
     p {
       padding-bottom: 19px;
+
       @media (min-width: $tablet) {
         margin-top: 20px;
         margin-bottom: 19px;
@@ -63,6 +64,7 @@
 
     p {
       padding-bottom: 25px;
+
       @media (min-width: $tablet) {
         padding: 0;
       }
@@ -251,22 +253,13 @@
 }
 
 .form-block__field {
-  color: $black;
-
-  @include fonts($font-size-medium, $line-height-big, 700);
-
-  &::placeholder {
-    color: $black;
-    text-transform: none;
-  }
-}
-
-.form-block__field {
   flex: auto;
   box-sizing: border-box;
   width: 100%;
   height: 128px;
   padding: 13px 23px 29px 21px;
+
+  color: $black;
 
   background-color: $gray-600;
   border: 0;
@@ -274,4 +267,9 @@
   resize: none;
 
   @include fonts($font-size-medium, $line-height-big, 700, none);
+
+  &::placeholder {
+    color: $black;
+    text-transform: none;
+  }
 }

@@ -48,12 +48,10 @@
   }
 
   @media (max-width: $mobile-max) {
-    box-shadow: inset 0 -1px 0 $black-20,
-    inset 0 1px 0 $white-20;
+    box-shadow: inset 0 -1px 0 $black-20, inset 0 1px 0 $white-20;
 
     &:last-child {
-      box-shadow: inset 0 1px 0 $white-20,
-      inset 0 -4px 4px $black-20;
+      box-shadow: inset 0 1px 0 $white-20, inset 0 -4px 4px $black-20;
     }
 
     &:first-child {

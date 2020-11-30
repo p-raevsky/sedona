@@ -80,6 +80,7 @@
 
   &--del {
     padding-right: 0;
+
     @media (min-width: $desktop) {
       display: none;
     }
