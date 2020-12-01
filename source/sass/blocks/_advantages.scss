@@ -66,18 +66,10 @@
         padding-top: 71px;
         padding-bottom: 39px;
 
-        &::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 50%;
-
-          width: 768px;
-          height: 37px;
-
-          background: url("../img/advantages-triangle.svg") no-repeat;
-          transform: translate(-50%, 0);
-        }
+        background-image: url("../img/advantages-triangle.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: 120% auto;
       }
 
       @media (min-width: $tablet) {
