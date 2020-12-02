@@ -2,27 +2,52 @@
   text-align: center;
 
   &--main {
-    padding-bottom: 48px;
+    padding-bottom: 11px;
 
     @media (min-width: $tablet) {
       padding-bottom: 53px;
     }
   }
 
+  &--short {
+    .heading__img-wrap {
+      @media (max-width: $mobile-max) {
+        height: 158px;
+      }
+
+      @media (min-width: $tablet) {
+        height: 290px;
+      }
+    }
+  }
+
   &--form {
     padding-bottom: 16px;
+
+    @media (min-width: $tablet) {
+      padding-bottom: 91px;
+    }
   }
 
   &--catalog {
     padding-bottom: 20px;
+
+    @media (min-width: $tablet) {
+      padding-bottom: 65px;
+    }
   }
 }
 
 .heading__img-wrap {
+  position: relative;
+
   width: 100%;
   height: 389px;
 
-  background: url("../img/back-mobile@1x.jpg") no-repeat 50% 50%;
+  text-align: center;
+
+  background: url("../img/back-desktop@1x.jpg") no-repeat 50% 100%;
+  background-size: cover;
 
   @media (min-width: $tablet) {
     height: 518px;
@@ -31,6 +56,30 @@
 
 .heading__logo {
   margin-top: 90px;
+
+  &--short {
+    @media (max-width: $mobile-max) {
+      margin-top: 52px;
+    }
+
+    @media (min-width: $tablet) {
+      width: 457px;
+      height: 78px;
+      margin-top: 95px;
+    }
+  }
+
+  &--big {
+    @media (min-width: $tablet) {
+      width: 461px;
+      height: 350px;
+      margin-top: 77px;
+    }
+  }
+}
+
+.heading__title-wrap {
+  text-align: center;
 }
 
 .heading__title {
@@ -43,13 +92,33 @@
 
   @include fonts($font-size-medium, $line-height-big, 700);
 
+  @media (min-width: $tablet) {
+    margin-top: 44px;
+  }
+
   &--form {
     margin-top: 36px;
     margin-bottom: 0;
+
+    @media (min-width: $tablet) {
+      margin-top: 64px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-top: 114px;
+    }
   }
 
-  @media (min-width: $tablet) {
-    margin-top: 44px;
+  &--catalog {
+    @media (min-width: $tablet) {
+      margin-top: 64px;
+    }
+  }
+
+  br {
+    @media (max-width: $mobile-medium) {
+      display: none;
+    }
   }
 }
 
@@ -62,4 +131,14 @@
   color: $black-lighten;
 
   @include fonts($font-size-small, $line-height-big);
+
+  @media (max-width: $mobile-max) {
+    width: 92%;
+  }
+
+  br {
+    @media (max-width: $mobile-medium) {
+      display: none;
+    }
+  }
 }

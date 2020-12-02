@@ -9,4 +9,18 @@
   background-color: $blue;
 
   @include fonts($font-size-big, $line-height-big, 700);
+
+  &:hover {
+    background-color: $blue-darken;
+  }
+
+  &:active {
+    color: $white-30;
+
+    background-color: $blue-darkest;
+  }
+
+  &:disabled {
+    background-color: $gray-400;
+  }
 }

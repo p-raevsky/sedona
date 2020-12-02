@@ -1,13 +1,31 @@
 .copyright {
   display: flex;
   align-items: center;
+
+  @media (max-width: $mobile-max) {
+    margin-top: 40px;
+  }
 }
 
 .copyright__text {
   display: inline-block;
+  margin-top: 0;
   margin-right: 13px;
+  margin-bottom: 2px;
 
   color: $black;
 
   @include fonts($font-size-small, $line-height-big);
+}
+
+.copyright__image {
+  fill: $black;
+
+  &:hover {
+    fill: $blue;
+  }
+
+  &:active {
+    fill: $black-30;
+  }
 }

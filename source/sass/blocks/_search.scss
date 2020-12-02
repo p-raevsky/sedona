@@ -16,6 +16,7 @@
 
 .search__text {
   width: 90%;
+  max-width: 400px;
   margin: auto;
   margin-top: 0;
   margin-bottom: 27px;
@@ -25,19 +26,22 @@
   @include fonts($font-size-small, $line-height-medium);
 
   @media (min-width: $tablet) {
-    max-width: 396px;
+    max-width: 435px;
+  }
+
+  br {
+    @media (max-width: $mobile-max) {
+      display: none;
+    }
   }
 }
 
 .search__button {
   width: 72%;
+  max-width: 458px;
   margin: auto;
   padding-right: 25px;
   padding-left: 25px;
-
-  @media (min-width: $tablet) {
-    max-width: 458px;
-  }
 }
 
 .search__img-wrap {
