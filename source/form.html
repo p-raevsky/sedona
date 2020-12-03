@@ -32,13 +32,17 @@
         <button class="page-header__toggle page-header__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
         <a class="page-header__logo" href="index.html">
-          <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип «Седона»">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+            <img class="page-header__image" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип «Седона»">
+          </picture>
         </a>
       </header>
 
       <main class="page-main">
-        <section class="heading heading--form heading--short">
-          <div class="heading__img-wrap">
+        <section class="heading heading--form">
+          <div class="heading__img-wrap heading__img-wrap--short">
             <img class="heading__logo heading__logo--short" src="img/text-index-small.svg" width="229" height="39" alt="Заголовок «Седона»">
           </div>
 

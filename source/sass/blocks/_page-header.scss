@@ -56,4 +56,15 @@
   z-index: 1;
 
   transform: translate(-50%, 0);
+
+  @media (min-width: $desktop) {
+    bottom: -44px;
+  }
+}
+
+.page-header__image {
+  @media (min-width: $desktop) {
+    width: 187px;
+    height: 96px;
+  }
 }

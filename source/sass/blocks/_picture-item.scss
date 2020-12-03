@@ -41,6 +41,14 @@
   @media (max-width: $mobile-max) {
     height: 280px;
   }
+
+  @media (min-width: $tablet) {
+    height: 267px;
+
+    &--first {
+      height: 400px;
+    }
+  }
 }
 
 .picture-item__like-count,

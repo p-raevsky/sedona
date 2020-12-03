@@ -32,13 +32,17 @@
         <button class="page-header__toggle page-header__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
         <a class="page-header__logo" href="index.html">
-          <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип «Седона»">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+            <img class="page-header__image" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип «Седона»">
+          </picture>
         </a>
       </header>
 
       <main class="page-main">
-        <section class="heading heading--catalog heading--short">
-          <div class="heading__img-wrap">
+        <section class="heading heading--catalog">
+          <div class="heading__img-wrap heading__img-wrap--short">
             <img class="heading__logo heading__logo--short" src="img/text-index-small.svg" width="229" height="39" alt="Заголовок «Седона»">
           </div>
 
@@ -56,7 +60,11 @@
             <li class="gallery__item gallery__item--first">
               <div class="gallery__picture picture-item">
                 <a class="picture-item__link" href="#">
-                  <img class="picture-item__image" src="img/photo-1-desktop@1x.jpg" width="1200" height="400" alt="Изображение на фото: Дорога в лучах заката, уходящая за горизонт."><!--Размеры 150/150 временно-->
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                    <img class="picture-item__image picture-item__image--first" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Изображение на фото: Дорога в лучах заката, уходящая за горизонт.">
+                  </picture>
                 </a>
 
                 <div class="picture-item__text-wrap">
@@ -71,7 +79,11 @@
             <li class="gallery__item">
               <div class="gallery__picture picture-item">
                 <a class="picture-item__link" href="#">
-                  <img class="picture-item__image" src="img/photo-2-desktop@1x.jpg" width="400" height="267" alt="Изображение на фото: Кактусоподобное растение крупным планом."><!--Размеры 150/150 временно-->
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                    <img class="picture-item__image" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Изображение на фото: Кактусоподобное растение крупным планом.">
+                  </picture>
                 </a>
 
                 <div class="picture-item__text-wrap">
@@ -86,7 +98,11 @@
             <li class="gallery__item">
               <div class="gallery__picture picture-item picture-item--gray-back">
                 <a class="picture-item__link" href="#">
-                  <img class="picture-item__image" src="img/photo-3-desktop@1x.jpg" width="400" height="267" alt="Изображение на фото: Дорога в виде серпантина в горной местности.">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                    <img class="picture-item__image" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Изображение на фото: Дорога в виде серпантина в горной местности.">
+                  </picture>
                 </a>
 
                 <div class="picture-item__text-wrap">
@@ -101,7 +117,11 @@
             <li class="gallery__item">
               <div class="gallery__picture picture-item">
                 <a class="picture-item__link" href="#">
-                  <img class="picture-item__image" src="img/photo-4-desktop@1x.jpg" width="400" height="267" alt="Изображение на фото: Горный пейзаж и непосредственно достопримечательность под названием «Мост Дьявола».">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                    <img class="picture-item__image" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Изображение на фото: Горный пейзаж и непосредственно достопримечательность под названием «Мост Дьявола».">
+                  </picture>
                 </a>
 
                 <div class="picture-item__text-wrap">
