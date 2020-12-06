@@ -14,12 +14,27 @@
   margin-bottom: 2px;
 
   color: $black;
+  word-break: break-all;
 
   @include fonts($font-size-small, $line-height-big);
+
+  @media (max-width: $mobile-max) {
+    padding-left: 20px;
+  }
+
+  @media (min-width: $tablet) {
+    width: 152px;
+
+    text-align: right;
+  }
 }
 
 .copyright__image {
   fill: $black;
+
+  @media (max-width: $mobile-max) {
+    margin-right: 20px;
+  }
 
   &:hover {
     fill: $blue;

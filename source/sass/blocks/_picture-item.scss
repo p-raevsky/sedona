@@ -81,6 +81,7 @@
   @include fonts($font-size-small, $line-height-medium, 400, none);
 
   @media (min-width: $tablet) {
+    width: 220px;
     padding-left: 20px;
   }
 

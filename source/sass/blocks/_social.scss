@@ -1,8 +1,8 @@
 .social__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   width: 151px;
+  margin: 0 auto;
 
   @include list;
 }
@@ -10,8 +10,14 @@
 .social__item {
   width: 46px;
   height: 48px;
+  margin-right: 6px;
+  margin-bottom: 6px;
 
   background-color: $blue;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 
   &:hover {
     background-color: $blue-darken;

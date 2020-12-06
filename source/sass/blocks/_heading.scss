@@ -114,6 +114,7 @@
   margin-bottom: 0;
 
   color: $black;
+  word-break: break-all;
 
   @include fonts($font-size-medium, $line-height-big, 700);
 
