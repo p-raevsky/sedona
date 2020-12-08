@@ -29,6 +29,13 @@
 
   background-color: $blue;
 
+  &:nth-child(2),
+  &:nth-child(6) {
+    @media (min-width: $tablet) {
+      padding-right: 20%;
+    }
+  }
+
   &:hover {
     @media (max-width: $mobile-max) {
       background-color: $blue-darken;
@@ -39,23 +46,6 @@
     @media (max-width: $mobile-max) {
       background-color: $blue-darkest;
     }
-  }
-
-  &:nth-child(2),
-  &:nth-child(6) {
-    @media (min-width: $tablet) {
-      width: 35%;
-      padding-left: 5%;
-
-      text-align: left;
-    }
-
-    // @media (min-width: $desktop) {
-    //   width: 34%;
-    //   padding-left: 6%;
-
-    //   text-align: left;
-    // }
   }
 
   @media (max-width: $mobile-max) {

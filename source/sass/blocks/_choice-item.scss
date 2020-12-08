@@ -42,6 +42,11 @@
   border-radius: 50%;
 }
 
+.choice-item__input:focus + span {
+  border-radius: 1px;
+  box-shadow: 0 1px 0 5px $white, 0 1px 0 7px $black;
+}
+
 .choice-item__input:hover + .choice-item__text::before {
   background-color: $gray-400;
 }

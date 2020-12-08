@@ -99,7 +99,11 @@
   border: none;
   outline: 0;
 
-  @include fonts($font-size-medium, $line-height-big, 700);
+  @include fonts($font-size-medium, $line-height-big, 700, none);
+
+  &--error {
+    background-color: $red;
+  }
 
   &--width {
     padding-right: 80px;

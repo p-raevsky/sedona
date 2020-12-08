@@ -32,8 +32,10 @@
 
     <div class="page__wrap">
       <header class="page-header">
+        <button class="page-header__toggle page-header__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
         <nav class="main-nav">
-          <ul class="main-nav__list">
+          <ul class="main-nav__list" aria-label="Список пунктов меню">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
             </li>
@@ -51,8 +53,6 @@
             </li>
           </ul>
         </nav>
-
-        <button class="page-header__toggle page-header__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
         <a class="page-header__logo" href="index.html">
           <picture>
@@ -79,7 +79,7 @@
         <section class="gallery">
           <h2 class="visually-hidden">Галерея фото</h2>
 
-          <ul class="gallery__list">
+          <ul class="gallery__list" role="group" aria-label="Галерея фото">
             <li class="gallery__item gallery__item--first">
               <div class="gallery__picture picture-item">
                 <a class="picture-item__link" href="#">
@@ -179,7 +179,7 @@
 
             <p class="video__desc">Смотрите видеопрезентацию и скорее за билетами, пока они<br> не подорожали в очередной раз!</p>
 
-            <video class="video__clip" poster="img/video-desktop@1x.jpg" width="800" height="500">
+            <video class="video__clip" poster="img/video-desktop@1x.jpg" width="800" height="500" aria-label="Смотреть видеоролик">
               <source src="#">
             </video>
 
@@ -187,7 +187,7 @@
               <div class="controls__scale">
                 <div class="controls__bar"></div>
 
-                <div class="controls__toggle-wrap" tabindex="0"><div class="controls__toggle"></div></div>
+                <div class="controls__toggle-wrap" tabindex="0" aria-label="Перемотать видео"><div class="controls__toggle"></div></div>
               </div>
 
               <button class="controls__button controls__button--restart" type="button" aria-label="Обновить">
@@ -216,7 +216,7 @@
         <p class="page-footer__text">#visitsedona</p>
 
         <div class="social">
-          <ul class="social__list">
+          <ul class="social__list" aria-label="Список ссылок на социальные сети">
             <li class="social__item">
               <a class="social__link social__link--tw" href="#"><span class="visually-hidden">Твитер</span></a>
             </li>
@@ -243,6 +243,6 @@
       </footer>
     </div>
 
-    <script src="js/main-nav-toggle.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

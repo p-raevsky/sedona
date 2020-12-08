@@ -29,12 +29,14 @@
   }
 }
 
-.copyright__image {
-  fill: $black;
-
+.copyright__link {
   @media (max-width: $mobile-max) {
     margin-right: 20px;
   }
+}
+
+.copyright__image {
+  fill: $black;
 
   &:hover {
     fill: $blue;

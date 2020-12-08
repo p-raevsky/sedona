@@ -16,7 +16,9 @@
     <div class="page__wrap">
       <header class="page-header">
         <nav class="main-nav">
-          <ul class="main-nav__list">
+          <button class="page-header__toggle page-header__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
+          <ul class="main-nav__list" aria-label="Список пунктов меню">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
             </li>
@@ -34,8 +36,6 @@
             </li>
           </ul>
         </nav>
-
-        <button class="page-header__toggle page-header__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
         <a class="page-header__logo" href="index.html">
           <picture>
@@ -59,9 +59,9 @@
           </div>
         </section>
 
-        <form class="form" method="post" action="https://echo.htmlacademy.ru">
-          <fieldset class="form-block form-block--user">
-            <p class="form-block__title form-block__title--right">Представьтесь:</p>
+        <form class="form" method="post" action="https://echo.htmlacademy.ru" aria-label="Заполнить форму обратной связи">
+          <fieldset class="form-block form-block--user" role="group" aria-labelledby="user">
+            <p class="form-block__title form-block__title--right" id="user">Представьтесь:</p>
 
             <ul class="form-block__list form-block__list--user">
               <li class="form-block__item form-block__item--user">
@@ -90,8 +90,8 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form-block form-block--contacts">
-            <p class="form-block__title form-block__title--with-line">Контактная информация:</p>
+          <fieldset class="form-block form-block--contacts" role="group" aria-labelledby="contacts">
+            <p class="form-block__title form-block__title--with-line" id="contacts">Контактная информация:</p>
 
             <ul class="form-block__list form-block__list--contacts">
               <li class="form-block__item form-block__item--contacts">
@@ -112,8 +112,8 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form-block form-block--feeling">
-            <p class="form-block__title form-block__title--left">Ваше общее впечатление:</p>
+          <fieldset class="form-block form-block--feeling" role="group" aria-labelledby="feeling">
+            <p class="form-block__title form-block__title--left" id="feeling">Ваше общее впечатление:</p>
 
             <ul class="form-block__list form-block__list--feeling">
               <li class="form-block__item form-block__item--feeling">
@@ -142,8 +142,8 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form-block form-block--attractions">
-            <p class="form-block__title form-block__title--with-line">Посещенные<br> достопримечательности:</p>
+          <fieldset class="form-block form-block--attractions" role="group" aria-labelledby="attractions">
+            <p class="form-block__title form-block__title--with-line" id="attractions">Посещенные<br> достопримечательности:</p>
 
             <ul class="form-block__list form-block__list--attractions">
               <li class="form-block__item form-block__item--attractions">
@@ -180,11 +180,11 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form-block form-block--write-us">
-            <p class="form-block__title form-block__title--with-line">Опишите свои эмоции</p>
+          <fieldset class="form-block form-block--write-us" role="group" aria-labelledby="write-us">
+            <p class="form-block__title form-block__title--with-line" id="write-us">Опишите свои эмоции</p>
 
             <label class="form-block__letter">
-              <textarea class="form-block__field" name="letter" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="form-block__field" name="letter" placeholder="Опишите подробно все свои восторги" aria-label="Опишите подробно все свои восторги"></textarea>
             </label>
           </fieldset>
 
@@ -200,7 +200,7 @@
         <p class="page-footer__text">#visitsedona</p>
 
         <div class="social">
-          <ul class="social__list">
+          <ul class="social__list" aria-label="Список ссылок на социальные сети">
             <li class="social__item">
               <a class="social__link social__link--tw" href="#"><span class="visually-hidden">Твитер</span></a>
             </li>
@@ -227,6 +227,26 @@
       </footer>
     </div>
 
-    <script src="js/main-nav-toggle.js"></script>
+    <section class="modal modal--success modal--success--close">
+      <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+
+      <p class="modal__desc">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+
+      <div class="modal__wrap-btn">
+        <a class="modal__button button" href="#" aria-label="Текст на кнопке">Закрыть окно</a>
+      </div>
+    </section>
+
+    <section class="modal modal--error modal--error--close">
+      <h2 class="modal__title">Что-то пошло<br> не так!</h2>
+
+      <p class="modal__desc modal__desc--error">Проверьте поля, выделенные красным,<br> скорее всего вы забыли их заполнить</p>
+
+      <div class="modal__wrap-btn modal__wrap-btn--error">
+        <a class="modal__button modal__button--error button" href="#" aria-label="Текст на кнопке">Ок</a>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
