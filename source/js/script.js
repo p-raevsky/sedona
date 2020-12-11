@@ -64,7 +64,6 @@ window.addEventListener('keydown', function (evt) {
 
 document.addEventListener("DOMContentLoaded", function() {
   if (document.body.clientWidth >= 768) {
-    choiceItemInput.tabindex = 4;
-    console.log('Hello');
+    choiceItemInput.tabIndex = 5;
   }
 });

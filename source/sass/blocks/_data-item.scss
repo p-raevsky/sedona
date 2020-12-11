@@ -19,6 +19,11 @@
       background-repeat: no-repeat;
       background-position: center;
 
+      @media (min-width: $tablet) {
+        top: 35px;
+        right: -1px;
+      }
+
       @media (min-width: $desktop) {
         top: 0;
       }
@@ -32,7 +37,14 @@
 
         background-image: url("../img/phone.svg");
 
+        @media (min-width: $tablet) {
+          top: 36px;
+
+          padding: 21px 19px 18px 21px;
+        }
+
         @media (min-width: $desktop) {
+          top: 0;
           right: 79px;
         }
       }
@@ -49,6 +61,10 @@
         padding: 23px 21px;
 
         background-image: url("../img/mail.svg");
+
+        @media (min-width: $tablet) {
+          padding: 22px 21px 23px;
+        }
       }
     }
 
@@ -71,6 +87,10 @@
     padding-bottom: 6px;
     padding-left: 22px;
 
+    @media (min-width: $tablet) {
+      padding-bottom: 9px;
+    }
+
     @media (min-width: $desktop) {
       min-width: max-content;
       padding: 0;
@@ -91,7 +111,7 @@
   flex: auto;
   box-sizing: border-box;
   width: 100%;
-  padding: 18px 22px 14px;
+  padding: 18px 22px 14px 21px;
 
   color: $black;
 

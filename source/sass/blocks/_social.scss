@@ -5,6 +5,10 @@
   margin: 0 auto;
 
   @include list;
+
+  @media (min-width: $tablet) {
+    margin-right: 9px;
+  }
 }
 
 .social__item {
@@ -39,7 +43,7 @@
   &--tw {
     width: 18px;
     height: 15px;
-    padding: 16px 14px;
+    padding: 16px 13px;
 
     background-image: url("../img/twitter.svg");
   }
@@ -47,7 +51,7 @@
   &--fb {
     width: 9px;
     height: 19px;
-    padding: 14px 18px;
+    padding: 13px 18px;
 
     background-image: url("../img/facebook.svg");
   }
