@@ -2,33 +2,40 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 39px;
-  padding-bottom: 36px;
+  padding-top: 35px;
+  padding-bottom: 19px;
 
   background-color: $white;
-
-  @media (max-width: $mobile-max) {
-    padding-bottom: 23px;
-  }
 
   @media (min-width: $tablet) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 84%;
+    max-width: 962px;
     margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 24px;
   }
 }
 
 .page-footer__text {
   margin-top: 0;
-  margin-bottom: 34px;
 
   color: $black;
+  word-break: break-all;
 
   @include fonts($font-size-big, $line-height-big, 700);
 
+  @media (max-width: $mobile-max) {
+    margin-bottom: 33px;
+    padding: 0 20px 0 18px;
+
+    text-align: center;
+  }
+
   @media (min-width: $tablet) {
-    margin-bottom: 0;
+    width: 200px;
+    margin-top: 17px;
   }
 }

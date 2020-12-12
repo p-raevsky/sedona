@@ -3,7 +3,7 @@
   align-items: center;
 
   @media (max-width: $mobile-max) {
-    margin-top: 40px;
+    margin-top: 34px;
   }
 }
 
@@ -11,11 +11,29 @@
   display: inline-block;
   margin-top: 0;
   margin-right: 13px;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 
   color: $black;
+  word-break: break-all;
 
   @include fonts($font-size-small, $line-height-big);
+
+  @media (max-width: $mobile-max) {
+    padding-left: 20px;
+  }
+
+  @media (min-width: $tablet) {
+    width: 152px;
+    margin-right: 11px;
+
+    text-align: right;
+  }
+}
+
+.copyright__link {
+  @media (max-width: $mobile-max) {
+    margin-right: 20px;
+  }
 }
 
 .copyright__image {

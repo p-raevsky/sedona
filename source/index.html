@@ -7,10 +7,18 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
+    <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+      <symbol viewBox="0 0 27 35" id="image-copyright">
+        <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
+      </symbol>
+    </svg>
+
     <div class="page__wrap">
       <header class="page-header">
         <nav class="main-nav">
-          <ul class="main-nav__list">
+          <button class="page-header__toggle page-header__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
+          <ul class="main-nav__list" aria-label="Список пунктов меню">
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--active">Главная</a>
             </li>
@@ -26,14 +34,15 @@
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">Html academy</a>
             </li>
+          </ul>
         </nav>
-
-        <button class="page-header__toggle page-header__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
         <a class="page-header__logo">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+
             <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+
             <img class="page-header__image" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип «Седона»">
           </picture>
         </a>
@@ -66,9 +75,17 @@
 
             <div class="advantages__img-wrap advantages__img-wrap--first">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-city-desktop@1x.webp 1x, img/photo-city-desktop@2x.webp 2x">
+
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.webp 1x, img/photo-city-tablet@2x.webp 2x">
+
+                <source type="image/webp" srcset="img/photo-city-mobile@1x.webp 1x, img/photo-city-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1200px)" srcset="img/photo-city-desktop@1x.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x,">
-                <img class="advantages__image advantages__image--after" src="img/photo-city-mobile@1x.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" alt="На фото запечатлена городская сцена на фоне гор.">
+
+                <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+
+                <img class="advantages__image advantages__image--after" src="img/photo-city-mobile@1x.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" alt="На фото запечатлена городская сцена на фоне гор">
               </picture>
             </div>
 
@@ -82,7 +99,7 @@
               <div class="advantages__item advantages__item--white advantages__item--white--second">
                 <h3 class="advantages__title">Сувениры</h3>
 
-                <p class="advantages__text">Не только китайского, но и местного производства!</p>
+                <p class="advantages__text">Не только китайского,<br> но и местного производства!</p>
               </div>
 
               <div class="advantages__item advantages__item--white advantages__item--white--third">
@@ -102,9 +119,17 @@
 
             <div class="advantages__img-wrap advantages__img-wrap--second">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img//photo-bridge-desktop@1x.webp 1x, img//photo-bridge-desktop@2x.webp 2x">
+
+                <source type="image/webp" media="(min-width: 768px)" srcset="img//photo-bridge-tablet@1x.webp 1x, img//photo-bridge-tablet@2x.webp 2x">
+
+                <source type="image/webp" srcset="img//photo-bridge-mobile@1x.webp 1x, img//photo-bridge-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+
                 <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-                <img class="advantages__image advantages__image--before" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="На фото запечатлен горный пейзаж и непосредственно достопримечательность под названием «Мост Дьявола».">
+
+                <img class="advantages__image advantages__image--before" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="На фото запечатлен горный пейзаж и непосредственно достопримечательность под названием «Мост Дьявола»">
               </picture>
             </div>
 
@@ -121,7 +146,7 @@
 
               <p class="advantages__text">— №4 —</p>
 
-              <p class="advantages__text">Ехать в седону из Лас-вегаса совсем<br> не скучно!</p>
+              <p class="advantages__text">Ехать в седону из<br class="advantages__br-desktop-del"> Лас-вегаса совсем<br> не скучно!</p>
             </div>
 
             <div class="advantages__item advantages__item--gray">
@@ -142,16 +167,17 @@
 
             <p class="search__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
 
-            <a class="search__button button" href="#" disabled>Найти гостинницу</a>
+            <a class="search__button button" href="#">Найти гостиницу</a>
           </div>
 
           <div class="search__img-wrap">
-            <iframe class="search__iframe-map"></iframe> <!--Потом вставлю код-->
-
             <picture>
               <source media="(min-width: 1200px)" srcset="img/map-desktop@1x.jpg">
+
               <img class="search__image-map" src="img/map-tablet@1x.jpg" alt="Местоположение на карте: Седона. Аризона">
             </picture>
+
+            <iframe class="search__iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1337606.7718636002!2d-112.3021287488323!3d34.44643901471161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927b17fc1cd71!2z0JDRgNC40LfQvtC90LAsINCh0KjQkA!5e0!3m2!1sru!2sua!4v1607325919345!5m2!1sru!2sua" width="600" height="450" allowfullscreen="" aria-hidden="false" tabindex="0" title="Местоположение на карте: Седона. Аризона"></iframe>
           </div>
         </section>
       </main>
@@ -160,7 +186,7 @@
         <p class="page-footer__text">#visitsedona</p>
 
         <div class="social">
-          <ul class="social__list">
+          <ul class="social__list" aria-label="Список ссылок на социальные сети">
             <li class="social__item">
               <a class="social__link social__link--tw" href="#"><span class="visually-hidden">Твитер</span></a>
             </li>
@@ -179,14 +205,14 @@
           <p class="copyright__text">Разработано</p>
 
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__image" width="27" height="34" viewBox="0 0 27 35" fill="#000000" xmlns="http://www.w3.org/2000/svg" aria-label="Логотип HTML Academy, ссылка ведёт на лендинг интенсива «Профессиональный HTML и CSS, уровень 2">
-              <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
+            <svg class="copyright__image" width="27" height="34" fill="#000000" role="img" aria-label="Логотип HTML Academy, ссылка ведёт на лендинг интенсива «Профессиональный HTML и CSS, уровень 2»">
+              <use xlink:href="#image-copyright"></use>
             </svg>
           </a>
         </div>
       </footer>
     </div>
 
-    <script src="js/main-nav-toggle.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

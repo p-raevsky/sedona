@@ -5,8 +5,10 @@
 
   color: $white;
   text-decoration: none;
+  word-break: break-all;
 
   background-color: $blue;
+  border: 0;
 
   @include fonts($font-size-big, $line-height-big, 700);
 

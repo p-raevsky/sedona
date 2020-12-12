@@ -1,0 +1,133 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+
+  width: 100%;
+  max-width: 640px;
+  padding-top: 39px;
+
+  text-align: center;
+
+  background-color: $white;
+  box-shadow: 0 7px 15px $black-15;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet) {
+    padding-top: 52px;
+  }
+
+  &--success {
+    display: block;
+
+    &--close {
+      display: none;
+    }
+  }
+
+  &--error {
+    display: block;
+    max-width: 400px;
+
+    &--close {
+      display: none;
+    }
+  }
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  @include fonts($font-size-medium, $line-height-big, 700);
+
+  @media (max-width: $mobile-max) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 35px;
+
+    @include fonts($font-size-large, $line-height-big, 700);
+  }
+
+  &--error {
+    @media (min-width: $tablet) {
+      margin-bottom: 24px;
+
+      line-height: $line-height-large;
+    }
+  }
+}
+
+.modal__desc {
+  width: 80%;
+  max-width: 413px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  @include fonts($font-size-small, $line-height-medium);
+
+  &--error {
+    width: 73%;
+    margin-bottom: 0;
+
+    @media (max-width: $mobile-max) {
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+.modal__wrap-btn {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  text-align: center;
+
+  background-color: $gray-600;
+
+  @media (min-width: $tablet) {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+
+  &--error {
+    padding-top: 24px;
+    padding-bottom: 35px;
+
+    background-color: $white;
+
+    @media (min-width: $tablet) {
+      padding-top: 40px;
+      padding-bottom: 49px;
+    }
+  }
+}
+
+.modal__button {
+  width: 88%;
+  max-width: 458px;
+  margin: 0 auto;
+  padding-top: 17px;
+  padding-bottom: 15px;
+
+  @include fonts($font-size-medium, $line-height-big, 700);
+
+  @media (min-width: $tablet) {
+    @include fonts($font-size-big, $line-height-big, 700);
+  }
+
+  &--error {
+    width: 56%;
+    max-width: 272px;
+
+    @media (min-width: $tablet) {
+      width: 68%;
+    }
+  }
+}
