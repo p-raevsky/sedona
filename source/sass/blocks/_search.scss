@@ -67,6 +67,8 @@
 .search__img-wrap {
   position: relative;
 
+  background-color: $gray;
+
   &::before,
   &::after {
     content: "";
