@@ -67,8 +67,10 @@ window.addEventListener('keydown', function (evt) {
   }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+if (choiceItemInput) {
+  document.addEventListener('DOMContentLoaded', function() {
   if (document.body.clientWidth >= 768) {
     choiceItemInput.tabIndex = 5;
   }
 });
+}
