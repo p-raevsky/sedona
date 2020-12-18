@@ -135,7 +135,12 @@
     position: relative;
 
     width: 70%;
+    padding-bottom: 25px;
     padding-left: 50px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
 
     &::before {
       content: "";
@@ -147,14 +152,15 @@
     }
 
     @media (min-width: $tablet) {
+      width: 100%;
       padding: 0;
 
       text-align: center;
     }
 
     h3 {
-      margin-top: 25px;
-      margin-bottom: 0;
+      margin-top: 0;
+      margin-bottom: 16px;
 
       @media (min-width: $tablet) {
         margin: 0;
@@ -163,8 +169,7 @@
     }
 
     p {
-      margin-top: 16px;
-      margin-bottom: 0;
+      margin: 0;
 
       @media (min-width: $tablet) {
         width: 75%;
@@ -192,15 +197,11 @@
           transform: translateX(-50%);
         }
       }
-
-      h3 {
-        margin: 0;
-      }
     }
 
     &--second {
       &::before {
-        top: 14px;
+        top: -11px;
         left: 6px;
 
         width: 32px;
@@ -240,7 +241,7 @@
 
     &--third {
       &::before {
-        top: 21px;
+        top: -4px;
         left: -1px;
 
         width: 40px;
@@ -328,11 +329,11 @@
   padding: 35px 0 35px 6%;
 
   @media (min-width: $tablet) {
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
     padding: 0 0 59px;
 
     grid-area: 2/1/3/4;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   @media (min-width: $desktop) {

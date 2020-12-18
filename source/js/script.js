@@ -25,19 +25,21 @@ navToggle.addEventListener('click', function() {
   }
 });
 
-buttonForm.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  for (var i = 0; i < dataItemField.length; i++) {
-    if (dataItemField[i].value === '') {
-      dataItemField[i].classList.add('data-item__field--error');
-      modalError.classList.remove('modal--error--close');
-      return;
-    } else {
-      dataItemField[i].classList.remove('data-item__field--error');
+if (buttonForm) {
+  buttonForm.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    for (var i = 0; i < dataItemField.length; i++) {
+      if (dataItemField[i].value === '') {
+        dataItemField[i].classList.add('data-item__field--error');
+        modalError.classList.remove('modal--error--close');
+        return;
+      } else {
+        dataItemField[i].classList.remove('data-item__field--error');
+      }
     }
-  }
-  modalSuccess.classList.remove('modal--success--close');
-});
+    modalSuccess.classList.remove('modal--success--close');
+  });
+}
 
 for (var i = 0; i < modalClose.length; i++) {
   modalClose[i].addEventListener('click', function (evt) {
