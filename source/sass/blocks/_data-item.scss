@@ -38,9 +38,9 @@
         background-image: url("../img/phone.svg");
 
         @media (min-width: $tablet) {
-          top: 36px;
+          top: 34px;
 
-          padding: 21px 19px 18px 21px;
+          padding: 24px 19px 17px 21px;
         }
 
         @media (min-width: $desktop) {
@@ -63,7 +63,7 @@
         background-image: url("../img/mail.svg");
 
         @media (min-width: $tablet) {
-          padding: 22px 21px 23px;
+          padding: 23px 21px 23px;
         }
       }
     }
@@ -122,7 +122,8 @@
   @include fonts($font-size-medium, $line-height-big, 700, none);
 
   &--error {
-    background-color: $red;
+    background-color: $white;
+    box-shadow: inset 0 0 0 4px $red;
   }
 
   &--width {

@@ -4,7 +4,7 @@ var noJs = document.querySelector('.page-header__toggle');
 var buttonForm = document.querySelector('.button-wrap__button');
 var modalSuccess = document.querySelector('.modal--success');
 var modalError = document.querySelector('.modal--error');
-var dataItemField = document.querySelectorAll('.data-item__field');
+var dataItemField = document.querySelectorAll('.data-item__field:required');
 var modalClose = document.querySelectorAll('.modal__button');
 var choiceItemInput = document.querySelector('.choice-item__input');
 
@@ -29,8 +29,11 @@ buttonForm.addEventListener('click', function (evt) {
   evt.preventDefault();
   for (var i = 0; i < dataItemField.length; i++) {
     if (dataItemField[i].value === '') {
+      dataItemField[i].classList.add('data-item__field--error');
       modalError.classList.remove('modal--error--close');
       return;
+    } else {
+      dataItemField[i].classList.remove('data-item__field--error');
     }
   }
   modalSuccess.classList.remove('modal--success--close');
@@ -62,7 +65,7 @@ window.addEventListener('keydown', function (evt) {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', function() {
   if (document.body.clientWidth >= 768) {
     choiceItemInput.tabIndex = 5;
   }
