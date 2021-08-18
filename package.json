@@ -7,6 +7,7 @@
     "autoprefixer": "10.0.2",
     "browser-sync": "2.26.13",
     "del": "^6.0.0",
+    "gh-pages": "^3.2.3",
     "gulp": "4.0.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",

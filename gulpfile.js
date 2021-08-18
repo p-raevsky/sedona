@@ -13,6 +13,8 @@ const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 const svgstore = require('gulp-svgstore');
 const del = require('del');
+const ghPages = require('gh-pages');
+const path = require('path')
 
 // Styles
 
@@ -177,3 +179,10 @@ exports.default = gulp.series(
     server,
     watcher
   ));
+
+//Deploy
+
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './build'), cb);
+}
+exports.deploy = deploy;
